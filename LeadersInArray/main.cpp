@@ -25,18 +25,19 @@ int main() {
         // Rightmost element always leader.
         leaders.push_back(array[array.size()-1]);
 
-        for (int k = int(array.size()-2); k>=0; k--){
-            if (max < array[k]){
-                max = array[k];
-                leaders.push_back(max);
+        for (int k = int(array.size()-2); k>=0; k--){  // T(N-2)
+            if (max < array[k]){                       // T(N)
+                max = array[k];                        // T(N)
+                leaders.push_back(max);                // T(N)
             }
         }
+                                                      // T = 4N - 2 = O(N)
 
-        for(int h = int(leaders.size()-1); h>= 0; h--){
-            std::cout<<leaders[h]<<" ";
+        for(int h = int(leaders.size()-1); h>= 0; h--){ // T(N-1)
+            std::cout<<leaders[h]<<" ";                 // T(N-1)
 
         }
-
+                                                        // T = 2N - 2 = O(N)
         std::cout<<std::endl;
     }
 

@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/selman/Desktop/CompatitiveProgramming/LeadersInArray/main.cpp
+/Users/selman/Google Drive/Master/First Year/First semester/Competitive programming and contests/Github/CompatitiveProgramming/NextLargerElement/main.cpp
 iostream
 -
 vector
+-
+stack
 -
 

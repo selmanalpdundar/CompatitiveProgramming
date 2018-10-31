@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/selman/Desktop/Homeworks/KadanesAlgorithm/main.cpp" "/Users/selman/Desktop/Homeworks/KadanesAlgorithm/cmake-build-debug/CMakeFiles/kadanes_algorithm.dir/main.cpp.o"
+  "/Users/selman/Google Drive/Master/First Year/First semester/Competitive programming and contests/Github/CompatitiveProgramming/KadanesAlgorithm/main.cpp" "/Users/selman/Google Drive/Master/First Year/First semester/Competitive programming and contests/Github/CompatitiveProgramming/KadanesAlgorithm/cmake-build-debug/CMakeFiles/kadanes_algorithm.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

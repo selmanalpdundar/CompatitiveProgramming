@@ -3,6 +3,10 @@
 
 int main() {
 
+    /* Problem
+         * Given an array C of size N-1 and given that there are numbers from 1 to N with one element missing,
+         * the missing number is to be found.
+     */
     int n = 0;
     std::cin >> n;  // n keeps how many case will be given
 

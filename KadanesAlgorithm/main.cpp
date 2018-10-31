@@ -3,6 +3,12 @@
 
 int main() {
 
+
+
+    /* Problem
+         * Given an array containing both negative and positive integers.
+         * Find the contiguous sub-array with maximum sum.
+     */
     int n = 0;
     std::cin >> n;  // n keeps how many case will be given
 

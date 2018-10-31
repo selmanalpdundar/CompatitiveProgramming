@@ -1,4 +1,4 @@
-# Install script for directory: /Users/selman/Desktop/Homeworks/KadanesAlgorithm
+# Install script for directory: /Users/selman/Google Drive/Master/First Year/First semester/Competitive programming and contests/Github/CompatitiveProgramming/KadanesAlgorithm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/selman/Desktop/Homeworks/KadanesAlgorithm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/selman/Google Drive/Master/First Year/First semester/Competitive programming and contests/Github/CompatitiveProgramming/KadanesAlgorithm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

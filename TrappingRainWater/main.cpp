@@ -3,6 +3,12 @@
 
 int main() {
 
+
+    /* Problem
+         * Given an array A of N non-negative integers representing height of blocks at index i as Ai where the width of each block is 1.
+         * Compute how much water can be trapped in between blocks after raining.
+     */
+
     int t = 0;
     std::cin>>t;
 

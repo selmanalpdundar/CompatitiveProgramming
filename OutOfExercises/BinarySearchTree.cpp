@@ -150,6 +150,25 @@ public:
     }
     
     
+    bool isBST(){
+        
+        return false;
+    }
+    
+    
+    void inorder(){
+        
+    }
+    
+    void preorder(){
+        
+    }
+    
+    void postorder(){
+        
+    }
+    
+    
     // inorder
     void print(Node *root){
         

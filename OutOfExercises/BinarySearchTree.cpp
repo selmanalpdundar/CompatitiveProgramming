@@ -5,7 +5,7 @@ public:
     int value;
     Node *left;
     Node *right;
-
+    
 public:
     Node(int value){
         this->value = value;
@@ -53,9 +53,9 @@ public:
         bool isLeft = false;
         
         while(current != NULL){
-           
+            
             if(current->value == value) break;
-        
+            
             if(current->value > value){
                 parent = current;
                 current = current->left;
@@ -75,15 +75,15 @@ public:
             else parent->right = NULL;
             
         } else if(current->left != NULL && current->right == NULL){
-           
+            
             if(isLeft) parent->left = current->left;
             else parent->right = current->left;
-      
+            
         } else if(current->left == NULL && current-> right != NULL){
-           
+            
             if(isLeft) parent->left = current->right;
             else current->right = current->right;
-
+            
         }else if( current->left != NULL && current->right != NULL){
             
             
@@ -120,7 +120,7 @@ public:
         Node *current = root;
         
         if(current == NULL) return NULL;
-    
+        
         while(current->left != NULL) current  = current->left;
         
         return current;
@@ -137,6 +137,16 @@ public:
         while(current->right != NULL)  current = current->right;
         
         return current;
+    }
+    
+    Node *successor(int value){
+        
+        return NULL;
+    }
+    
+    Node *predecessor(int value){
+        
+        return NULL;
     }
     
     
@@ -161,15 +171,15 @@ int main(){
     
     BinarySearchTree *bst = new BinarySearchTree();
     /*
-                    100
-                   /    \
-                 10      200
-                /  \    /   \
-               5    11 201  400
-              / \
-             4   6
-            /
-           3
+     100
+     /    \
+     10      200
+     /  \    /   \
+     5    11 201  400
+     / \
+     4   6
+     /
+     3
      */
     
     bst->insert(100);
@@ -189,7 +199,7 @@ int main(){
     //bst->deleteNode(11);
     
     
-   // bst->print();
+    // bst->print();
     
     Node *node  = bst->lookup(5);
     

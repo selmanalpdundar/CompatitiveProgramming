@@ -19,6 +19,7 @@ class BinarySearchTree{
     Node *root;
 public:
     void insert(int value){
+        
         if(root == NULL){
             root = new Node(value);
             return;
@@ -45,9 +46,7 @@ public:
     
     void deleteNode(int value){
         
-        if(root == NULL){
-            return;
-        }
+        if(root == NULL) return;
         
         Node *current = root;
         Node *parent = NULL;
@@ -55,9 +54,7 @@ public:
         
         while(current != NULL){
            
-            if(current->value == value){
-                break;
-            }
+            if(current->value == value) break;
         
             if(current->value > value){
                 parent = current;
@@ -70,25 +67,48 @@ public:
             }
         }
         
-        if(current == NULL){
-            return;
-        }
+        if(current == NULL) return;
         
         if(current->left == NULL && current->right == NULL){
             free(current);
-            if(isLeft){
-                parent->left = NULL;
-            } else{
-                parent->right = NULL;
-            }
+            if(isLeft) parent->left = NULL;
+            else parent->right = NULL;
+            
         } else if(current->left != NULL && current->right == NULL){
-            parent->left = current->left;
+           
+            if(isLeft) parent->left = current->left;
+            else parent->right = current->left;
+      
         } else if(current->left == NULL && current-> right != NULL){
-            parent->right = current->right;
+           
+            if(isLeft) parent->left = current->right;
+            else current->right = current->right;
+
         }else if( current->left != NULL && current->right != NULL){
+            
             
         }
     }
+    
+    
+    Node *lookup(int value){
+        
+        Node *current = root;
+        
+        if(current == NULL) return NULL;
+        
+        while(current != NULL){
+            
+            if(current->value == value) return current;
+            
+            if(current->value > value) current = current->left;
+            
+            if(current->value < value) current = current->right;
+            
+        }
+        return NULL;
+    }
+    
     
     
     
@@ -96,35 +116,87 @@ public:
         print(root);
     }
     
+    Node *min(){
+        Node *current = root;
+        
+        if(current == NULL) return NULL;
+    
+        while(current->left != NULL) current  = current->left;
+        
+        return current;
+        
+        
+    }
+    
+    
+    Node *max(){
+        Node *current = root;
+        
+        if(current == NULL) return NULL;
+        
+        while(current->right != NULL)  current = current->right;
+        
+        return current;
+    }
+    
+    
+    // inorder
     void print(Node *root){
         
-        if(root == NULL){
-            return;
-        }
+        if(root == NULL) return;
         
-        if(root->left != NULL){
-            print(root->left);
-        }
+        if(root->left != NULL) print(root->left);
+        
         std::cout<<root->value<<std::endl;
         
-        if(root->right != NULL){
-            print(root->right);
-        }
+        if(root->right != NULL) print(root->right);
     }
+    
+    
+    
     
 };
 
 int main(){
     
     BinarySearchTree *bst = new BinarySearchTree();
+    /*
+                    100
+                   /    \
+                 10      200
+                /  \    /   \
+               5    11 201  400
+              / \
+             4   6
+            /
+           3
+     */
     
     bst->insert(100);
     bst->insert(10);
     bst->insert(5);
-    bst->insert(1);
+    bst->insert(11);
     bst->insert(200);
+    bst->insert(201);
+    bst->insert(400);
+    bst->insert(4);
+    bst->insert(3);
+    bst->insert(6);
     
-    bst->print();
+    bst->deleteNode(5);
+    //bst->deleteNode(100)
+    //bst->deleteNode(200);
+    //bst->deleteNode(11);
+    
+    
+   // bst->print();
+    
+    Node *node  = bst->lookup(5);
+    
+    std::cout<<"Lookup(5) : "<<node->value<<std::endl;
+    std::cout<<"Min() : "<<bst->min()->value<<std::endl;
+    std::cout<<"Max() : "<<bst->max()->value<<std::endl;
+    
     
     return 0;
 }

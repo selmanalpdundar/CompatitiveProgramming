@@ -4,13 +4,11 @@
 
 std::vector<int> stingToIntegerArray(std::string integer){
 
-
-
     char array[integer.size()];
 
-    std::strcpy(array,integer.c_str());
+    strcpy(array,integer.c_str());
 
-     std::vector<int> vector;
+    std::vector<int> vector;
 
     vector.reserve(integer.size());
 

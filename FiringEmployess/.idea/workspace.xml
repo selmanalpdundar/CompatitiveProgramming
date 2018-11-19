@@ -11,13 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13fec2d8-f146-4e50-947c-e0d6017cdb2b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../LargestEvenNumber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestEvenNumber/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LargestEvenNumber/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LargestEvenNumber/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LargestEvenNumber/cmake-build-debug/LargestEvenNumber" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestEvenNumber/cmake-build-debug/LargestEvenNumber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LargestEvenNumber/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../LargestEvenNumber/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="13fec2d8-f146-4e50-947c-e0d6017cdb2b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +24,7 @@
     <session id="1328090704">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -151,12 +146,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542045283083</updated>
-      <workItem from="1542045285024" duration="1754000" />
+      <workItem from="1542045285024" duration="2120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1754000" />
+    <option name="totallyTimeSpent" value="2120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -173,7 +168,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

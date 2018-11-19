@@ -18,12 +18,22 @@
  solved efficiently (constant time per query) by computing prefix-sums on vector B.
  */
 #include "StaticPrefixSum2.hpp"
-void sum( char array[], int n, int, bool binary_vector[]){
-    for(int i =0; i<n-1; i++){
-        if(binary_vector[i] == binary_vector[i+1]){
-            binary_vector[i] = 1;
-        } else {
-            binary_vector[i] = 0;
+
+StaticPrefixSum2::StaticPrefixSum2(int size, char array[]){
+    vector.reserve(size);
+    
+    for(int i = 0; i<size-1; i++){
+        if(array[i] == array[i+1]){
+            vector[i] = 1;
         }
     }
+    
+}
+
+int StaticPrefixSum2::sum(int l, int r){
+    int sum = 0;
+    for(int j = l; j<r; j++){
+        sum += vector[j];
+    }
+    return sum;
 }

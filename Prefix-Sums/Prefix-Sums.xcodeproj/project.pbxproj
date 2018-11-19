@@ -10,6 +10,7 @@
 		A273D00E21A2360600306ADA /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A273D00D21A2360600306ADA /* Main.cpp */; };
 		A273D01121A2368100306ADA /* StaticPrefixSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A273D00F21A2368100306ADA /* StaticPrefixSum.cpp */; };
 		A273D01421A23AC400306ADA /* StaticPrefixSum2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A273D01221A23AC400306ADA /* StaticPrefixSum2.cpp */; };
+		A2CEFB3821A32863009D08DF /* StaticPrefixSum3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2CEFB3621A32863009D08DF /* StaticPrefixSum3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		A273D01021A2368100306ADA /* StaticPrefixSum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StaticPrefixSum.hpp; sourceTree = "<group>"; };
 		A273D01221A23AC400306ADA /* StaticPrefixSum2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaticPrefixSum2.cpp; sourceTree = "<group>"; };
 		A273D01321A23AC400306ADA /* StaticPrefixSum2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StaticPrefixSum2.hpp; sourceTree = "<group>"; };
+		A2CEFB3621A32863009D08DF /* StaticPrefixSum3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaticPrefixSum3.cpp; sourceTree = "<group>"; };
+		A2CEFB3721A32863009D08DF /* StaticPrefixSum3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StaticPrefixSum3.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				A273D01021A2368100306ADA /* StaticPrefixSum.hpp */,
 				A273D01221A23AC400306ADA /* StaticPrefixSum2.cpp */,
 				A273D01321A23AC400306ADA /* StaticPrefixSum2.hpp */,
+				A2CEFB3621A32863009D08DF /* StaticPrefixSum3.cpp */,
+				A2CEFB3721A32863009D08DF /* StaticPrefixSum3.hpp */,
 			);
 			path = "Prefix-Sums";
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				A273D01421A23AC400306ADA /* StaticPrefixSum2.cpp in Sources */,
 				A273D00E21A2360600306ADA /* Main.cpp in Sources */,
 				A273D01121A2368100306ADA /* StaticPrefixSum.cpp in Sources */,
+				A2CEFB3821A32863009D08DF /* StaticPrefixSum3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

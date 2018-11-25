@@ -6,7 +6,7 @@ int main() {
 
     int t = 0;
 
-    std::vector<std::vector<int>> vectors;
+    std::vector< std::vector<int> > vectors;
 
     std::cin>>t;
 

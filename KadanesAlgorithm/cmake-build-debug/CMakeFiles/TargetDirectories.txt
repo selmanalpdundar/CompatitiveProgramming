@@ -1,3 +1,0 @@
-/Users/selman/Google Drive/Master/First Year/First semester/Competitive programming and contests/Github/CompatitiveProgramming/KadanesAlgorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/selman/Google Drive/Master/First Year/First semester/Competitive programming and contests/Github/CompatitiveProgramming/KadanesAlgorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/selman/Google Drive/Master/First Year/First semester/Competitive programming and contests/Github/CompatitiveProgramming/KadanesAlgorithm/cmake-build-debug/CMakeFiles/kadanes_algorithm.dir

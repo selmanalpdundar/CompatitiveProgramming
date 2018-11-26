@@ -21,14 +21,14 @@ I will push here my solutions for the given example
 |Exercises|
 |---------|
 |[Largest Even Number](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/LargestEvenNumber.cpp)|
-|[Firing Employees](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/firingEmployees.cpp)|
-|[Inversion Count](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/inversionCount.cpp)|
-|[Kadanes Algorithm](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/kadanesAlgorithm.cpp)|
-|[Leaders in Array](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/leadersInArray.cpp)|
-|[Mega City](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/megaCity.cpp)|
-|[Missing Number in Array](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/missingNumberInArray.cpp)|
-|[Next Larger Element](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/nextLargerElement.cpp)|
-|[Sliding Window Maximum ](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/slidingWindowMaximum.cpp)|
-|[Team Member](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/teamMember.cpp)|
-|[Towers](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/towers.cpp)|
-|[Trapping Rain Water](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/trappingRainWater.cpp)|
+|[Firing Employees](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/FiringEmployees.cpp)|
+|[Inversion Count](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/InversionCount.cpp)|
+|[Kadanes Algorithm](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/KadanesAlgorithm.cpp)|
+|[Leaders in Array](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/LeadersInArray.cpp)|
+|[Mega City](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/MegaCity.cpp)|
+|[Missing Number in Array](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/MissingNumberInArray.cpp)|
+|[Next Larger Element](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/NextLargerElement.cpp)|
+|[Sliding Window Maximum ](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/SlidingWindowMaximum.cpp)|
+|[Team Member](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/TeamMember.cpp)|
+|[Towers](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/Towers.cpp)|
+|[Trapping Rain Water](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/TrappingRainWater.cpp)|

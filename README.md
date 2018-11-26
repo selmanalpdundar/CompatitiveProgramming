@@ -15,7 +15,7 @@ I will push here my solutions for the given example
 
 |Data Structures|
 |---------------|
-|[Binary Search Tree](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/DataStructure/BinarySearchTree.cpp|
+|[Binary Search Tree](https://github.com/selmanalpdundar/CompatitiveProgramming/blob/master/DataStructure/BinarySearchTree.cpp)|
 
 
 |Exercises|

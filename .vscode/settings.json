@@ -9,6 +9,9 @@
         "stdexcept": "cpp",
         "type_traits": "cpp",
         "typeinfo": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "vector": "cpp",
+        "string": "cpp",
+        "iostream": "cpp"
     }
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+
 #define RANGE 9
 
 void countingSort(int arr[], int n){
@@ -39,9 +40,8 @@ int main(){
 
     int array[] = {1,5,6,2,3,4,7,2,7,8,9};
     int n  = 11;
-    
-    print(array,n);
+
     countingSort(array,n);
-    print(array,n);
+  
 
 }

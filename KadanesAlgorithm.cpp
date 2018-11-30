@@ -3,8 +3,6 @@
 
 int main() {
 
-
-
     /* Problem
          * Given an array containing both negative and positive integers.
          * Find the contiguous sub-array with maximum sum.
@@ -12,7 +10,7 @@ int main() {
     int n = 0;
     std::cin >> n;  // n keeps how many case will be given
 
-    for (int i = 0; i < n; i++) {  // to take set of data for test
+    for (int i = 0; i < n; i++) { 
 
         unsigned int m = 0;
         std::cin >> m; // size of vector

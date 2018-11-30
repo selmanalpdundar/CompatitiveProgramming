@@ -4,7 +4,8 @@
 int main() {
 
     /* Problem
-         * Given an array C of size N-1 and given that there are numbers from 1 to N with one element missing,
+         * Given an array C of size N-1 and given that
+         * there are numbers from 1 to N with one element missing,
          * the missing number is to be found.
      */
     int n = 0;
@@ -20,7 +21,12 @@ int main() {
             std::cin>>array[j];
         }
 
-
+        /* ----- Algorithm -------
+            1.Calculate the sum of numbers froms 1 to N
+            2.Subtract each element from sum 
+            3.Print Sum
+        */
+        
         int sum = (m*(m+1))/2;      // Gauss summation formula
 
         for(int k = 0; k<m-1; k++){

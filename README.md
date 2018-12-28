@@ -12,7 +12,7 @@ Take last element as a maximum and go leftforward and check each element witch m
 
 ## Kadane's Algorithm   
 **Problem Link**: [Kadane's Algorithm ](https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0)    
-**Source**: Geeks for Geeks  
-**Code**: [C++](KadanesAlgorithm.cpp)    
-**Complexity**: O(N)
+**Source**      : Geeks for Geeks  
+**Code**        : [C++](KadanesAlgorithm.cpp)    
+**Complexity**  : O(N)
 ### Explanation :

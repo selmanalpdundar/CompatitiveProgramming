@@ -1,4 +1,4 @@
-# CompatitiveProgramming
+# Competitive Programming and Contests
 
 ## Leaders in an array  
 **Problem Link**:[Leaders in an array](https://practice.geeksforgeeks.org/problems/leaders-in-an-array/0)  

@@ -12,6 +12,7 @@
 3. Segment Tree  (Best)
     O(n) to create tree
     O(n) to maintane tree
+    O(logn) to maintane tree
     O(logn) time to answer
 */
 

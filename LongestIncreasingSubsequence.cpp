@@ -1,7 +1,6 @@
 #include <iostream>
 
-
-
+// N^2
 int lis(int arr[], int n){
    
     int lis[n];

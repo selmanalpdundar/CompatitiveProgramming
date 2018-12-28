@@ -1,5 +1,7 @@
 #include <iostream>
 
+
+// N^2
 int lds(int arr[], int n){
    
     int lds[n];

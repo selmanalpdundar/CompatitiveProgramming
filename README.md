@@ -4,7 +4,8 @@
 **Problem Link**: [Leaders in an array](https://practice.geeksforgeeks.org/problems/leaders-in-an-array/0)  
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](LeadersInArray.cpp)  
-**Complexity**  : O(N)
+**Time Complexity**  : O(N)
+**Space Complexity**: O(N)
 
 ### Explanation
 We will take last element as a maximum and start to go leftforward and check each element witch this maximum if any of them bigger then current maximum push it to leaders and change current maximum with this number. The complexity of algorithm will be logaritmic because we will just need a scan.

@@ -4,7 +4,7 @@
 **Problem Link**: [Leaders in an array](https://practice.geeksforgeeks.org/problems/leaders-in-an-array/0)  
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](LeadersInArray.cpp)  
-**Time Complexity**  : O(N)
+**Time Complexity**  : O(N)  
 **Space Complexity**: O(N)
 
 ### Explanation

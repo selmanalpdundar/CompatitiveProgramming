@@ -7,7 +7,7 @@
 **Complexity**  : O(N)
 
 ### Explanation :
-Take last element as a maximum and go leftforward and check each element witch maximum if find a maxium push it to leaders and change current maximum with it
+We will take last element as a maximum and start to go leftforward and check each element witch this maximum if any of them bigger then current maximum push it to leaders and change current maximum with this number. The complexity of algorithm will be logaritmic because we will just need a scan.
 
 
 ## Kadane's Algorithm   

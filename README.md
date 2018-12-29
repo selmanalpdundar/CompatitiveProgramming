@@ -11,14 +11,14 @@
 We will take last element as a maximum and start to go leftforward and check each element witch this maximum if any of them bigger then current maximum push it to leaders and change current maximum with this number. 
 ### Explanation of Time Complexity
 ```c++
-    for (int t = int(vectors[j].size()-2); t>=0; t--)  // T = 2n-2 :  n-2 times assignment and n-1 times checking
+    for (int t = int(vectors[j].size()-2); t>=0; t--)  // T = 2n-3 :  n-2 times assignment and n-1 times checking
         {
             if (max <= vectors[j][t])                  // T = n : n times checking
             {
                 max = vectors[j][t];                   // T = n : n times assignment at most
                 tempLeader.push_back(vectors[j][t]);   // T = n : n times assignment at most
             }
-        }                                              // Total = 5n - 2  and Big O(5n-2) = n
+        }                                              // Total = 5n - 3  and Big O(5n-3) = n
 ```      
 The time complexity of algorithm will be linear because we only make a scanning on given input array.
 

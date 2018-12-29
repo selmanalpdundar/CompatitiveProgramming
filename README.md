@@ -66,3 +66,27 @@ We will need only one scan from left to right. Because we just checking sum and 
 ### Explanation of Space Complexity
 We do not use extra space for doing anything. The system will use n space to store given input system.
 
+
+## Missing number in array   
+**Problem Link**: [Missing number in array ](https://practice.geeksforgeeks.org/problems/missing-number-in-array/0)    
+**Source**      : Geeks for Geeks  
+**Code**        : [C++](MissingNumberInArray.cpp.cpp)    
+**Time Complexity**  : O(N)  
+**Space Complexity**: O(N)
+
+### Description
+Intead of checking all number in array first calculate total sum from 1 to N with Gauss summation formula. Then subtract all the element of array from it. the number that will remain will be the missing one.
+### Explanation of Time Complexity
+```c++
+int sum = (m*(m+1))/2;      // Gauss summation formula
+
+for(int k = 0; k<m-1; k++) // T = 2(m - 1) + 1
+{
+    sum -= array[k];       // T = m - 1
+}                          // Total = 2(m - 1) + 1 + m - 1 
+                           // Total = 2m -2 + 1 + m - 1 = 3m - 1 = O(3m -1 ) = m                
+```   
+We are going to just travel in array to subtract each element of the array from gauss summation.
+### Explanation of Space Complexity
+We do not use extra space for doing anything. The system will use n space to store given input system.
+

@@ -1,43 +1,45 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
 int main() {
 
-    /* Problem
-         * Given an array containing both negative and positive integers.
-         * Find the contiguous sub-array with maximum sum.
-     */
     int n = 0;
-    std::cin >> n;  // n keeps how many case will be given
+    cin >> n;  
 
-    for (int i = 0; i < n; i++) { 
+    for (int i = 0; i < n; i++) 
+    { 
 
         unsigned int m = 0;
-        std::cin >> m; // size of vector
-        std::vector<int> array(m);
+        cin >> m; 
+        vector<int> array(m);
 
-        for(int j = 0; j<m; j++){
-            std::cin>>array[j];
+        for(int j = 0; j<m; j++)
+        {
+            cin>>array[j];
         }
 
         int sum = array[0];
         int max = array[0];
 
-        for(int k = 1; k<m; k++){
+        for(int k = 1; k<m; k++)
+        {
+          if(sum > 0  )
+          {
+            sum += array[k];
+          } else 
+          {
+            sum = array[k];
+           }
 
-            if(sum > 0  ){
-                sum += array[k];
-            } else {
-                sum = array[k];
-            }
-
-            if(sum > max){
+            if(sum > max)
+            {
                 max = sum;
             }
         }
 
-        std::cout<<max;
-        std::cout<<std::endl;
+        cout<<max;
+        cout<<endl;
     }
 
     return 0;

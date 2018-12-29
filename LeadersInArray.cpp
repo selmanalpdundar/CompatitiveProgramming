@@ -2,8 +2,6 @@
 #include <vector>
 using namespace std;
 
-#define LIMIT_OF_TEST 100
-#define LIMIT_OF_SIZE_OF_VECTOR 1000
 int main() {
 
     int number_of_test = 0;

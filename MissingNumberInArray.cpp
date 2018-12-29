@@ -1,24 +1,20 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
 int main() {
 
-    /* Problem
-         * Given an array C of size N-1 and given that
-         * there are numbers from 1 to N with one element missing,
-         * the missing number is to be found.
-     */
     int n = 0;
-    std::cin >> n;  // n keeps how many case will be given
+    cin >> n;  // n keeps how many case will be given
 
     for (int i = 0; i < n; i++) {  // to take set of data for test
 
         unsigned int m = 0;
-        std::cin >> m; // size of vector
-        std::vector<int> array(m-1);
+        cin >> m; // size of vector
+        vector<int> array(m-1);
 
         for(int j = 0; j<m-1; j++){
-            std::cin>>array[j];
+            cin>>array[j];
         }
 
         /* ----- Algorithm -------
@@ -33,8 +29,8 @@ int main() {
             sum -= array[k];
         }
 
-        std::cout<<sum;
-        std::cout<<std::endl;
+        cout<<sum;
+        cout<<endl;
     }
 
     return 0;

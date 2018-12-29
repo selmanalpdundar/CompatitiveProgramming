@@ -1,63 +1,76 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
+#define LIMIT_OF_TEST 100
+#define LIMIT_OF_SIZE_OF_VECTOR 1000
 int main() {
 
-    /* Problem
-        * Given an array of positive integers.
-        * Your task is to find the leaders in the array.
-        * Note: An element of array is leader if it is greater than
-        *  or equal to all the elements to its right side.
-        * Also, the rightmost element is always a leader.
-    */
+    int number_of_test = 0;
 
-    unsigned int n = 0;
-    
-    std::cin >> n;  // n keeps how many case will be given
+    cin >> number_of_test;
 
-    for (int i = 0; i < n; i++) {  // to take set of data for test
+    vector< vector<int> > vectors;
+    vector< vector<int> > leaders;
 
-        unsigned int m = 0;
+    // To get input
+    for (int i = 0; i < number_of_test; i++)
+    {
 
-        std::cin >> m; // size of array
+        int size_of_vector = 0;
 
-        std::vector<int> vector;
-        vector.reserve(m);
+        cin>>size_of_vector;
 
-        std::vector<int> leaders;
+        vector<int> tempVector;
 
-        // take give elements
-        for(int j = 0; j<m; j++){
-            std::cin>>vector[j];
+        tempVector.reserve(size_of_vector);
+
+        for(int k = 0; k<size_of_vector; k++)
+        {
+            int  number = 0;
+            cin>> number;
+            tempVector.push_back(number);
         }
 
-        // Take last element as a maximum 
-        int max = vector[vector.size()-1];
+        vectors.push_back(tempVector);
+    }
 
-        // Take right most element as a leader by the definition 
-        leaders.push_back(vector[vector.size()-1]);
 
-        /*  -- Algoritm --
-            Take last element as a maximum and go leftforward 
-            and check each element witch maximum if found a maxium 
-            push it to leaders and change current maximum with it
+    // To find leaders
+     for(int j=0; j<number_of_test; j++)
+     {
+        int max = vectors[j][vectors[j].size()-1];
 
-        */
-        for (int k = int(vector.size()-2); k>=0; k--){  // T(N-2)
-            if (max < vector[k]){                       // T(N)
-                max = vector[k];                        // T(N)
-                leaders.push_back(max);                // T(N)
+        vector<int> tempLeader;
+
+        tempLeader.push_back(vectors[j][vectors[j].size()-1]);
+
+        for (int t = int(vectors[j].size()-2); t>=0; t--)
+        {
+            if (max <= vectors[j][t])
+            {
+                max = vectors[j][t];
+                tempLeader.push_back(vectors[j][t]);
+
             }
         }
-                                                      // T = 4N - 2 = O(N)
-    
-        for(int h = int(leaders.size()-1); h>= 0; h--){ // T(N-1)
-            std::cout<<leaders[h]<<" ";                 // T(N-1)
+        leaders.push_back(tempLeader);
+
+     }
+
+       // To print leaders
+    for(int o = 0; o<number_of_test; o++)
+    {
+        for(int h = leaders[o].size() - 1; h>=0; h--)
+        {
+              cout<<leaders[o][h]<<" ";
 
         }
-                                                        // T = 2N - 2 = O(N)
-        std::cout<<std::endl;
-    }
+        cout<<endl;
+     }
+
+
+
 
     return 0;
 }

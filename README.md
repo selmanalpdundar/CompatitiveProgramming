@@ -57,9 +57,9 @@ for(int k = 1; k<m; k++)   // T = 2(m-1)+ 1
   }
             
  }                         
-                           Total =  2(m - 1) +1 + m-1 + m - 1 + m - 1 + m - 1
-                           Total = 2m - 2 + 1 + m - 1 + m - 1 + m - 1 + m - 1 
-                           Total = 6m - 4 = O(6m - 4) = m
+                           //Total =  2(m - 1) +1 + m-1 + m - 1 + m - 1 + m - 1
+                           //Total = 2m - 2 + 1 + m - 1 + m - 1 + m - 1 + m - 1 
+                           //Total = 6m - 4 = O(6m - 4) = m
 ```   
 
 We will need only one scan from left to right. Because we just checking sum and max with adding or assignment.

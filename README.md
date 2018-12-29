@@ -33,7 +33,7 @@ We will use at most 2n space n space for storing input and n space for storing l
 **Time Complexity**  : O(N)  
 **Space Complexity**: O(N)
 
-### Descrition
+### Description
 We start with taking first element from given array sum and max at the beginning and start loop from index 1. we look current sum is positive or not.If it is positive add current element of array to sum. if it is negative assign current element to sum. After checking current sum we will check maximum  because  maximum represents pervious maximum contiguous sub-array, if our sum is bigger than maximum assign it to maximum.
 ### Explanation of Time Complexity
 ```c++

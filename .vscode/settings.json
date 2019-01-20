@@ -12,6 +12,7 @@
         "algorithm": "cpp",
         "vector": "cpp",
         "string": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "__split_buffer": "cpp"
     }
 }

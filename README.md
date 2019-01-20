@@ -93,7 +93,7 @@ We do not use extra space for doing anything. The system will use n space to sto
 ## Trapping Rain Water  
 **Problem Link**: [Trapping Rain Water](https://practice.geeksforgeeks.org/problems/trapping-rain-water/0)    
 **Source**      : Geeks for Geeks  
-**Code**        : [C++](TrappingRainWater.cpp.cpp)    
+**Code**        : [C++](TrappingRainWater.cpp)    
 **Time Complexity**  : O(N)  
 **Space Complexity**: O(N)
 

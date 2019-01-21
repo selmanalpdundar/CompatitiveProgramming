@@ -160,3 +160,21 @@ We are going to take both mimum of maximum of both side of current element. We n
 
 ### Explanation of Space Complexity
 We use here 2n more space to keep maximum of left and maximum of right. We do not use any other space therefore the space complexity is N.
+
+
+## Kadane's Algorithm   
+**Problem Link**: [Sliding Window Maximum](https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0) 
+**Source**      : Geeks for Geeks  
+**Code**        : [C++](SlidingWindowMaximum.cpp)    
+**Time Complexity**  : O(N)  
+**Space Complexity**: O(N)
+
+### Description
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+

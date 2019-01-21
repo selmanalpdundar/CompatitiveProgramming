@@ -13,6 +13,12 @@
         "vector": "cpp",
         "string": "cpp",
         "iostream": "cpp",
-        "__split_buffer": "cpp"
+        "__split_buffer": "cpp",
+        "ostream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "iterator": "cpp",
+        "string_view": "cpp",
+        "__tuple": "cpp"
     }
 }

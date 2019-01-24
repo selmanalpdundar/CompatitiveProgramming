@@ -178,3 +178,20 @@ We use here 2n more space to keep maximum of left and maximum of right. We do no
 
 ### Explanation of Space Complexity
 
+
+## Next larger element
+**Problem Link**: [Next larger element](https://practice.geeksforgeeks.org/problems/next-larger-element/0) 
+**Source**      : Geeks for Geeks  
+**Code**        : [C++](SlidingWindowMaximum.cpp)    
+**Time Complexity**  : O(N)  
+**Space Complexity**: O(N)
+
+### Description
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+

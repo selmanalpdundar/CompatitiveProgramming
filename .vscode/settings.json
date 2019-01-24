@@ -19,6 +19,10 @@
         "deque": "cpp",
         "iterator": "cpp",
         "string_view": "cpp",
-        "__tuple": "cpp"
+        "__tuple": "cpp",
+        "__bit_reference": "cpp",
+        "bitset": "cpp",
+        "utility": "cpp",
+        "ios": "cpp"
     }
 }

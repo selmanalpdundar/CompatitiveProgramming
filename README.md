@@ -167,31 +167,41 @@ We use here 2n more space to keep maximum of left and maximum of right. We do no
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](SlidingWindowMaximum.cpp)    
 **Time Complexity**  : O(N)  
-**Space Complexity**: O(N)
+**Space Complexity** : O(N)
 
 ### Description
-
+This had been explained in class notes.
 ### Explanation of Time Complexity
-```c++
-
-```   
-
+This had been explained in class notes.
 ### Explanation of Space Complexity
-
+This had been explained in class notes.
 
 ## Next larger element
 **Problem Link**: [Next larger element](https://practice.geeksforgeeks.org/problems/next-larger-element/0) 
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](SlidingWindowMaximum.cpp)    
-**Time Complexity**  : O(N)  
+**Time Complexity** : O(N)  
 **Space Complexity**: O(N)
 
 ### Description
+This problem is similar to Sliding Window Maximum problem. Instead of using dequeue we are using here stack. We just make one iteration from 1 to n check stack top if stack top smaller than current element print current element as a next element of stack top. We push current element to stack after finishing.
 
 ### Explanation of Time Complexity
 ```c++
-
+  for(int i = 1; i<n; i++)
+        {
+            while(!stack.empty() && numbers[i] > numbers[stack.top()])
+            {
+                array[stack.top()] = numbers[i];
+                stack.pop();
+            }
+            stack.push(i);
+        }
 ```   
+It seems like we have n^2 complexity but in fact we have n complexity. In while loop we do not do more than 2n operation because we do not pop and push more than n. we push a number to check later. if it is smaller than current element then we pop it and we done with this number. Therefore we will do at most n pop and n push operation.
 
 ### Explanation of Space Complexity
+In here we have n space complexity because we use a stack n size and array n size. Stack cannot be bigger than n because we make push inside for not while.
+
+
 

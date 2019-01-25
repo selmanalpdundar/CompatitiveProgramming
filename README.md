@@ -179,7 +179,7 @@ This had been explained in class notes.
 ## Next larger element
 **Problem Link**: [Next larger element](https://practice.geeksforgeeks.org/problems/next-larger-element/0) 
 **Source**      : Geeks for Geeks  
-**Code**        : [C++](SlidingWindowMaximum.cpp)    
+**Code**        : [C++](NextLargerElement.cpp)    
 **Time Complexity** : O(N)  
 **Space Complexity**: O(N)
 

@@ -354,3 +354,320 @@ We just pass input array 2 time after counting sort to find smallest element and
 ### Explanation of Space Complexity
 We use 2n space because of counting sort counting sor need n more space to  sort.
 
+
+## Firing Employees
+**Problem Link**: [Firing Employees](https://practice.geeksforgeeks.org/problems/firing-employees/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](FiringEmployees.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## Check for BST
+**Problem Link**: [Check for BST](https://practice.geeksforgeeks.org/problems/check-for-bst/1) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](CheckForBST.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## Preorder Traversal and BST
+**Problem Link**: [Preorder Traversal and BST](https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](PreorderTraversalAndBST.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## Maximum Path Sum
+**Problem Link**: [Maximum Path Sum](https://practice.geeksforgeeks.org/problems/maximum-path-sum/1) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](MaximumPathSum.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## Ilya and Queries
+**Problem Link**: [Ilya and Queries](http://codeforces.com/problemset/problem/313/B?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](IlyaAndQueries.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## Alice, Bob and Chocolate
+**Problem Link**: [Alice, Bob and Chocolate](http://codeforces.com/problemset/problem/6/C?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](AliceBobAndChocolate.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+## Number of Ways
+**Problem Link**: [Number of Ways](http://codeforces.com/problemset/problem/466/C?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](NumberOfWays.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+##  Little Girl and Maximum Sum
+**Problem Link**: [ Little Girl and Maximum Sum](http://codeforces.com/problemset/problem/276/C?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](LittleGirlAndMaximumSum.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+## Update the Array
+**Problem Link**: [ Update the Array](https://www.spoj.com/problems/UPDATEIT/) 
+**Source**      : Sphere Online Judge 
+**Code**        : [C++](UpdateTheArray.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## Megacity
+**Problem Link**: [Megacity](http://codeforces.com/problemset/problem/424/B?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](MegaCity.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## Find Pair
+**Problem Link**: [Find Pair](http://codeforces.com/problemset/problem/160/C?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](FindPair.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## Two Heaps
+**Problem Link**: [Two Heaps](http://codeforces.com/problemset/problem/353/B?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](TwoHeaps.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## Circular RMQ
+**Problem Link**: [Circular RMQ](http://codeforces.com/problemset/problem/52/C) 
+**Source**      : Code Forces
+**Code**        : [C++](CircularRMQ.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## Nested Segments
+**Problem Link**: [Nested Segments](http://codeforces.com/problemset/problem/652/D?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](NestedSegments.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+### Explanation of Space Complexity
+
+
+## Pashmak and Parmida's problem
+**Problem Link**: [Pashmak and Parmida's problem](http://codeforces.com/problemset/problem/459/D?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](PashmakAndParmidasProblem.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## Powerful Array
+**Problem Link**: [Powerful Array](http://codeforces.com/contest/86/problem/D) 
+**Source**      : Code Forces
+**Code**        : [C++](PowerfulArray.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## Tree and Queries
+**Problem Link**: [Tree and Queries](http://codeforces.com/contest/375/problem/D) 
+**Source**      : Code Forces
+**Code**        : [C++](TreeAndQueries.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity

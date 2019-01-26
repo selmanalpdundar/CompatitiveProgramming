@@ -311,11 +311,46 @@ There is no need to use extra space for given input array I make everything in p
 **Space Complexity**: 
 
 ### Description
-
+The problems solution comes from counting sort we have limited digit range like 0-9. First we sort all input array with counting sort. First pass will find smallest event number and number of its occurence. Second pass will print out starting from biggest and check even number count if it is bigger than 1 it will also printed. End of the two pass we have print out a number finally we need to print smallest even number one more time to make even given input. 
 
 ### Explanation of Time Complexity
 ```c++
-
+     for(int j = size; j>=0; j--)
+        {
+            if(digits[j] % 2 == 0)
+            {
+                if(smallestEven == digits[j]){
+                    countOfSmallest += 1;
+                }else{
+                  smallestEven = digits[j];
+                  countOfSmallest = 1;
+                }
+                flag = true;
+            }
+        }
+        // First pass to find smallest even number  
+       for(int k = size; k>=0; k--)
+        {
+            if(digits.at(k) == smallestEven)
+            {
+                if(countOfSmallest > 1)
+                {
+                    cout<<digits.at(k);
+                    countOfSmallest--;
+                }
+            }
+            else
+            {
+               cout<<digits.at(k);
+            }
+        }
+        // Second pass to print out 
+        if(flag == true){
+            cout<<smallestEven;
+        }
+        // Finally we are printig smallest element.
 ```   
-
+We just pass input array 2 time after counting sort to find smallest element and printing.
 ### Explanation of Space Complexity
+We use 2n space because of counting sort counting sor need n more space to  sort.
+

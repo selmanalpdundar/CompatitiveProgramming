@@ -1,6 +1,6 @@
 # Competitive Programming and Contests
 
-## Leaders in an array  
+## 1.Leaders in an array  
 **Problem Link**: [Leaders in an array](https://practice.geeksforgeeks.org/problems/leaders-in-an-array/0)  
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](LeadersInArray.cpp)  
@@ -23,7 +23,7 @@ We will take last element as a maximum and start to go leftforward and check eac
 ```      
 The time complexity of algorithm will be linear because we only make a scanning on given input array.
 
-### Explanation of Space Complexity
+### 2.Explanation of Space Complexity
 We will use at most 2n space n space for storing input and n space for storing leaders.
 
 ## Kadane's Algorithm   
@@ -67,7 +67,7 @@ We will need only one scan from left to right. Because we just checking sum and 
 We do not use extra space for doing anything. The system will use n space to store given input system.
 
 
-## Missing number in array   
+## 3.Missing number in array   
 **Problem Link**: [Missing number in array ](https://practice.geeksforgeeks.org/problems/missing-number-in-array/0)    
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](MissingNumberInArray.cpp)    
@@ -90,7 +90,7 @@ We are going to just travel in array to subtract each element of the array from 
 ### Explanation of Space Complexity
 We do not use extra space for doing anything. The system will use n space to store given input system.
 
-## Trapping Rain Water  
+## 4.Trapping Rain Water  
 **Problem Link**: [Trapping Rain Water](https://practice.geeksforgeeks.org/problems/trapping-rain-water/0)    
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](TrappingRainWater.cpp)    
@@ -162,7 +162,7 @@ We are going to take both mimum of maximum of both side of current element. We n
 We use here 2n more space to keep maximum of left and maximum of right. We do not use any other space therefore the space complexity is N.
 
 
-## Sliding Window Maximum  
+## 5.Sliding Window Maximum  
 **Problem Link**: [Sliding Window Maximum](https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0) 
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](SlidingWindowMaximum.cpp)    
@@ -176,7 +176,7 @@ This had been explained in class notes.
 ### Explanation of Space Complexity
 This had been explained in class notes.
 
-## Next larger element
+## 6.Next larger element
 **Problem Link**: [Next larger element](https://practice.geeksforgeeks.org/problems/next-larger-element/0) 
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](NextLargerElement.cpp)    
@@ -205,7 +205,7 @@ In here we have n space complexity because we use a stack n size and array n siz
 
 
 
-## Towers
+## 7.Towers
 **Problem Link**: [Towers](http://codeforces.com/problemset/problem/37/A?locale=en) 
 **Source**      : Code Forces  
 **Code**        : [C++](Towers.cpp)    
@@ -250,7 +250,7 @@ The time complexity is O(O) to find solution but we need to preprocess out input
 There is no need to use extra space for given input array I make everything in place.
 
 
-## Finding Team Member
+## 8.Finding Team Member
 **Problem Link**: [Finding Team Member](http://codeforces.com/problemset/problem/579/B?locale=en) 
 **Source**      : Code Forces  
 **Code**        : [C++](FindingTeamMember.cpp)    
@@ -268,7 +268,7 @@ There is no need to use extra space for given input array I make everything in p
 ### Explanation of Space Complexity
 
 
-## Finding Team Member
+## 9.Finding Team Member
 **Problem Link**: [Finding Team Member](http://codeforces.com/problemset/problem/579/B?locale=en) 
 **Source**      : Code Forces  
 **Code**        : [C++](FindingTeamMember.cpp)    
@@ -303,7 +303,7 @@ There is no need to use extra space for given input array I make everything in p
 
 ### Explanation of Space Complexity
 
-## Largest Even Number
+## 10.Largest Even Number
 **Problem Link**: [Largest Even Number](https://practice.geeksforgeeks.org/problems/largest-even-number/0) 
 **Source**      : Geeks for Geeks
 **Code**        : [C++](LargestEvenNumber.cpp)    
@@ -355,7 +355,7 @@ We just pass input array 2 time after counting sort to find smallest element and
 We use 2n space because of counting sort counting sor need n more space to  sort.
 
 
-## Firing Employees
+## 11.Firing Employees
 **Problem Link**: [Firing Employees](https://practice.geeksforgeeks.org/problems/firing-employees/0) 
 **Source**      : Geeks for Geeks
 **Code**        : [C++](FiringEmployees.cpp)    
@@ -373,7 +373,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 ### Explanation of Space Complexity
 
 
-## Check for BST
+## 12. Check for BST
 **Problem Link**: [Check for BST](https://practice.geeksforgeeks.org/problems/check-for-bst/1) 
 **Source**      : Geeks for Geeks
 **Code**        : [C++](CheckForBST.cpp)    
@@ -392,7 +392,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-## Preorder Traversal and BST
+## 13. Preorder Traversal and BST
 **Problem Link**: [Preorder Traversal and BST](https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0) 
 **Source**      : Geeks for Geeks
 **Code**        : [C++](PreorderTraversalAndBST.cpp)    
@@ -411,7 +411,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-## Maximum Path Sum
+## 14.Maximum Path Sum
 **Problem Link**: [Maximum Path Sum](https://practice.geeksforgeeks.org/problems/maximum-path-sum/1) 
 **Source**      : Geeks for Geeks
 **Code**        : [C++](MaximumPathSum.cpp)    
@@ -430,7 +430,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-## Ilya and Queries
+## 15.Ilya and Queries
 **Problem Link**: [Ilya and Queries](http://codeforces.com/problemset/problem/313/B?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](IlyaAndQueries.cpp)    
@@ -448,7 +448,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 ### Explanation of Space Complexity
 
 
-## Alice, Bob and Chocolate
+## 16.Alice, Bob and Chocolate
 **Problem Link**: [Alice, Bob and Chocolate](http://codeforces.com/problemset/problem/6/C?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](AliceBobAndChocolate.cpp)    
@@ -465,7 +465,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 ### Explanation of Space Complexity
 
-## Number of Ways
+## 17. Number of Ways
 **Problem Link**: [Number of Ways](http://codeforces.com/problemset/problem/466/C?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](NumberOfWays.cpp)    
@@ -484,7 +484,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-##  Little Girl and Maximum Sum
+## 18.Little Girl and Maximum Sum
 **Problem Link**: [ Little Girl and Maximum Sum](http://codeforces.com/problemset/problem/276/C?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](LittleGirlAndMaximumSum.cpp)    
@@ -504,7 +504,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-## Update the Array
+## 19. Update the Array
 **Problem Link**: [ Update the Array](https://www.spoj.com/problems/UPDATEIT/) 
 **Source**      : Sphere Online Judge 
 **Code**        : [C++](UpdateTheArray.cpp)    
@@ -523,7 +523,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-## Megacity
+## 20.Megacity
 **Problem Link**: [Megacity](http://codeforces.com/problemset/problem/424/B?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](MegaCity.cpp)    
@@ -542,7 +542,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-## Find Pair
+## 21.Find Pair
 **Problem Link**: [Find Pair](http://codeforces.com/problemset/problem/160/C?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](FindPair.cpp)    
@@ -561,7 +561,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-## Two Heaps
+## 22.Two Heaps
 **Problem Link**: [Two Heaps](http://codeforces.com/problemset/problem/353/B?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](TwoHeaps.cpp)    
@@ -579,7 +579,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 ### Explanation of Space Complexity
 
 
-## Circular RMQ
+## 23.Circular RMQ
 **Problem Link**: [Circular RMQ](http://codeforces.com/problemset/problem/52/C) 
 **Source**      : Code Forces
 **Code**        : [C++](CircularRMQ.cpp)    
@@ -597,7 +597,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 ### Explanation of Space Complexity
 
 
-## Nested Segments
+## 24.Nested Segments
 **Problem Link**: [Nested Segments](http://codeforces.com/problemset/problem/652/D?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](NestedSegments.cpp)    
@@ -618,7 +618,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 ### Explanation of Space Complexity
 
 
-## Pashmak and Parmida's problem
+## 25.Pashmak and Parmida's problem
 **Problem Link**: [Pashmak and Parmida's problem](http://codeforces.com/problemset/problem/459/D?locale=en) 
 **Source**      : Code Forces
 **Code**        : [C++](PashmakAndParmidasProblem.cpp)    
@@ -637,7 +637,7 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 
-## Powerful Array
+## 26.Powerful Array
 **Problem Link**: [Powerful Array](http://codeforces.com/contest/86/problem/D) 
 **Source**      : Code Forces
 **Code**        : [C++](PowerfulArray.cpp)    
@@ -655,10 +655,512 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 ### Explanation of Space Complexity
 
 
-## Tree and Queries
+## 27.Tree and Queries
 **Problem Link**: [Tree and Queries](http://codeforces.com/contest/375/problem/D) 
 **Source**      : Code Forces
 **Code**        : [C++](TreeAndQueries.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+## 28.Array Copy
+**Problem Link**: [Array Copy](https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text23012018.pdf) 
+**Source**      : Exercise
+**Code**        : [C++](ArrayCopy.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## 29.Triplets
+**Problem Link**: [Triplets](https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text14022018.pdf) 
+**Source**      : Exercise
+**Code**        : [C++](Triplets.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 30.X Total Shapes
+**Problem Link**: [X Total Shapes](https://practice.geeksforgeeks.org/problems/x-total-shapes/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](XTotalShapes.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## 31.Bipartite Graph
+**Problem Link**: [Bipartite Graph](https://practice.geeksforgeeks.org/problems/bipartite-graph/1) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](BipartiteGraph.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+##  32.Fox And Names
+**Problem Link**: [Fox And Names](http://codeforces.com/problemset/problem/510/C?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](FoxAndNames.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 33.Learning Languages
+**Problem Link**: [Learning Languages](http://codeforces.com/problemset/problem/277/A?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](LearningLanguages.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+
+## 34.Checkposts
+**Problem Link**: [Checkposts](http://codeforces.com/problemset/problem/427/C?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](Checkposts.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 35.Xenia and Tree *
+**Problem Link**: [Xenia and Tree](http://codeforces.com/problemset/problem/342/E?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](XeniaAndTree.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 36.Minimum Spanning Tree
+**Problem Link**: [Minimum Spanning Tree](https://www.spoj.com/problems/MST/) 
+**Source**      : Sphere Online Judge
+**Code**        : [C++](MinimumSpanningTree.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+## 37.N Meetings in One Room
+**Problem Link**: [N Meetings in One Room](https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](NMeetingsInOneRoom.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 38.Wilbur and Array
+**Problem Link**: [Wilbur and Array](http://codeforces.com/problemset/problem/596/B?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](WilburAndArray.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 39.Alternative Thinking
+**Problem Link**: [Alternative Thinking](http://codeforces.com/problemset/problem/603/A?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](AlternativeThinking.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+
+## 40.Lexicographically Maximum Subsequence
+**Problem Link**: [Lexicographically Maximum Subsequence](http://codeforces.com/problemset/problem/196/A?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](LexicographicallyMaximumSubsequence.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+
+
+## 41.Woodcutters
+**Problem Link**: [Woodcutters](http://codeforces.com/contest/545/problem/C?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](Woodcutters.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 42.Queue
+**Problem Link**: [Queue](http://codeforces.com/problemset/problem/141/C?locale=en) 
+**Source**      : Code Forces
+**Code**        : [C++](Queue.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 43.Longest Common Subsequence
+**Problem Link**: [Longest Common Subsequence](https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](LongestCommonSubsequence.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## 44. 0 - 1 Knapsack Problem
+**Problem Link**: [0 - 1 Knapsack Problem](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](KnapsackProblem)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## 45.Longest Increasing Subsequence
+**Problem Link**: [Longest Increasing Subsequence](https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](LongestIncreasingSubsequence.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 46.Minimum Number of Jumps
+**Problem Link**: [Minimum Number of Jumps](https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](MinimumNumberOfJumps.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+## 47.Edit Distance
+**Problem Link**: [Edit Distance](https://practice.geeksforgeeks.org/problems/edit-distance/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](EditDistance.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+## 48.Longest Bitonic Subsequence
+**Problem Link**: [Longest Bitonic Subsequence](https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](LongestBitonicSubsequence.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+## 49.Subset Sum Problem
+**Problem Link**: [Subset Sum Problem](https://practice.geeksforgeeks.org/problems/subset-sum-problem/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](SubsetSumProblem.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+## 50.Vertex Cover
+**Problem Link**: [Vertex Cover](https://www.spoj.com/problems/PT07X/) 
+**Source**      : Sphere Online Judge
+**Code**        : [C++](VertexCover.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+
+## 51.Longest Palindromic Subsequence
+**Problem Link**: [Longest Palindromic Subsequence](https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](LongestPalindromicSubsequence.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+
+
+## 52.Longest Prefix Suffix
+**Problem Link**: [Longest Prefix Suffix](https://practice.geeksforgeeks.org/problems/longest-prefix-suffix/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](LongestPrefixSuffix)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## 53.Shift The String
+**Problem Link**: [Shift The String](https://www.codechef.com/problems/TASHIFT) 
+**Source**      : Code Chef
+**Code**        : [C++](ShiftTheString.cpp)    
 **Time Complexity** :   
 **Space Complexity**: 
 

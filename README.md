@@ -272,11 +272,11 @@ There is no need to use extra space for given input array I make everything in p
 **Problem Link**: [Inversion Count](https://www.spoj.com/problems/INVCNT/) 
 **Source**      : Sphere Online Judge  
 **Code**        : [C++](InversionCount.cpp)    
-**Time Complexity** :   
-**Space Complexity**: 
+**Time Complexity** : O(NLogN)   
+**Space Complexity**:  O(N)
 
 ### Description
-
+The basic approach is checking all element with other and we will have n^2 time complexity. With merge sort instead of checking everthing we divide all input untill it will
 
 ### Explanation of Time Complexity
 ```c++

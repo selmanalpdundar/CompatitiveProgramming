@@ -1,6 +1,23 @@
 #include <iostream>
+#include <stack>
 
-int main() {
+using namespace std;
+
+int main() 
+{
+    int numberOfCase = 0 ;
+
+    cin>>numberOfCase;
+    
+    while(numberOfCase != 0)
+    {   
+
+
+        numberOfCase--;
+    }
+
+
+
 
     return 0;
 }

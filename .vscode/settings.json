@@ -23,6 +23,7 @@
         "__bit_reference": "cpp",
         "bitset": "cpp",
         "utility": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "chrono": "cpp"
     }
 }

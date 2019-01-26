@@ -163,11 +163,11 @@ We use here 2n more space to keep maximum of left and maximum of right. We do no
 
 
 ## 5.Sliding Window Maximum  
-**Problem Link**: [Sliding Window Maximum](https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0) 
-**Source**      : Geeks for Geeks  
-**Code**        : [C++](SlidingWindowMaximum.cpp)    
-**Time Complexity**  : O(N)  
-**Space Complexity** : O(N)
+**Problem Link**: [Sliding Window Maximum](https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0)   
+**Source**      : Geeks for Geeks    
+**Code**        : [C++](SlidingWindowMaximum.cpp)      
+**Time Complexity**  : O(N)    
+**Space Complexity** : O(N)  
 
 ### Description
 This had been explained in class notes.
@@ -177,11 +177,11 @@ This had been explained in class notes.
 This had been explained in class notes.
 
 ## 6.Next larger element
-**Problem Link**: [Next larger element](https://practice.geeksforgeeks.org/problems/next-larger-element/0) 
-**Source**      : Geeks for Geeks  
-**Code**        : [C++](NextLargerElement.cpp)    
-**Time Complexity** : O(N)  
-**Space Complexity**: O(N)
+**Problem Link**: [Next larger element](https://practice.geeksforgeeks.org/problems/next-larger-element/0)   
+**Source**      : Geeks for Geeks    
+**Code**        : [C++](NextLargerElement.cpp)      
+**Time Complexity** : O(N)    
+**Space Complexity**: O(N)  
 
 ### Description
 This problem is similar to Sliding Window Maximum problem. Instead of using dequeue we are using here stack. We just make one iteration from 1 to n check stack top if stack top smaller than current element print current element as a next element of stack top. We push current element to stack after finishing.
@@ -206,11 +206,11 @@ In here we have n space complexity because we use a stack n size and array n siz
 
 
 ## 7.Towers
-**Problem Link**: [Towers](http://codeforces.com/problemset/problem/37/A?locale=en) 
-**Source**      : Code Forces  
-**Code**        : [C++](Towers.cpp)    
-**Time Complexity** : O(NLogN)  
-**Space Complexity**: O(N)
+**Problem Link**: [Towers](http://codeforces.com/problemset/problem/37/A?locale=en)   
+**Source**      : Code Forces    
+**Code**        : [C++](Towers.cpp)      
+**Time Complexity** : O(NLogN)    
+**Space Complexity**: O(N)  
 
 ### Description
 We first start with sorting our input array because in the problem description it says you can only merge same length bars therefore when we sort we will have same length bars in a contigous order. The time complexity is here about sorting algoirthm I used stl sort but if we use counting sort it will be linear solution. I just scann sorted array and carry global and local level along scanning. When there is not matching I compare local level with global and assign it to global and resert local level. Also I count merging along scanning to find out how many bars I will have end of the scanning.
@@ -251,11 +251,11 @@ There is no need to use extra space for given input array I make everything in p
 
 
 ## 8.Finding Team Member
-**Problem Link**: [Finding Team Member](http://codeforces.com/problemset/problem/579/B?locale=en) 
-**Source**      : Code Forces  
-**Code**        : [C++](FindingTeamMember.cpp)    
-**Time Complexity** :   
-**Space Complexity**: 
+**Problem Link**: [Finding Team Member](http://codeforces.com/problemset/problem/579/B?locale=en)   
+**Source**      : Code Forces    
+**Code**        : [C++](FindingTeamMember.cpp)     
+**Time Complexity** :     
+**Space Complexity**:   
 
 ### Description
 

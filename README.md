@@ -250,4 +250,72 @@ The time complexity is O(O) to find solution but we need to preprocess out input
 There is no need to use extra space for given input array I make everything in place.
 
 
+## Finding Team Member
+**Problem Link**: [Finding Team Member](http://codeforces.com/problemset/problem/579/B?locale=en) 
+**Source**      : Code Forces  
+**Code**        : [C++](FindingTeamMember.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
 
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## Finding Team Member
+**Problem Link**: [Finding Team Member](http://codeforces.com/problemset/problem/579/B?locale=en) 
+**Source**      : Code Forces  
+**Code**        : [C++](FindingTeamMember.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+
+## Inversion Count
+**Problem Link**: [Inversion Count](https://www.spoj.com/problems/INVCNT/) 
+**Source**      : Sphere Online Judge  
+**Code**        : [C++](InversionCount.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity
+
+## Largest Even Number
+**Problem Link**: [Largest Even Number](https://practice.geeksforgeeks.org/problems/largest-even-number/0) 
+**Source**      : Geeks for Geeks
+**Code**        : [C++](LargestEvenNumber.cpp)    
+**Time Complexity** :   
+**Space Complexity**: 
+
+### Description
+
+
+### Explanation of Time Complexity
+```c++
+
+```   
+
+### Explanation of Space Complexity

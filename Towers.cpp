@@ -34,7 +34,6 @@ int main()
                 {
                     glevel = llevel;
                 }
-                
                 merged += 1;
             }
             else
@@ -51,11 +50,7 @@ int main()
             }
         }
         
-        
         cout<< glevel <<" " << n - merged;
-
-    
-    
     
     return 0;
 }

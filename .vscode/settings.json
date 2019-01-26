@@ -24,6 +24,7 @@
         "bitset": "cpp",
         "utility": "cpp",
         "ios": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "iosfwd": "cpp"
     }
 }

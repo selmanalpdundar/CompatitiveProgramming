@@ -205,3 +205,49 @@ In here we have n space complexity because we use a stack n size and array n siz
 
 
 
+## Towers
+**Problem Link**: [Towers](http://codeforces.com/problemset/problem/37/A?locale=en) 
+**Source**      : Code Forces  
+**Code**        : [C++](Towers.cpp)    
+**Time Complexity** : O(NLogN)  
+**Space Complexity**: O(N)
+
+### Description
+We first start with sorting our input array because in the problem description it says you can only merge same length bars therefore when we sort we will have same length bars in a contigous order. The time complexity is here about sorting algoirthm I used stl sort but if we use counting sort it will be linear solution. I just scann sorted array and carry global and local level along scanning. When there is not matching I compare local level with global and assign it to global and resert local level. Also I count merging along scanning to find out how many bars I will have end of the scanning.
+
+### Explanation of Time Complexity
+```c++
+    for(int j = 0; j<n-1; j++)                         
+        {
+            if(arr[j] == arr[j+1])
+            {
+                llevel += 1;
+                
+                if(llevel > glevel)
+                {
+                    glevel = llevel;
+                }
+                merged += 1;
+            }
+            else
+            {
+                if(llevel > glevel)
+                {
+                    glevel = llevel;
+                    llevel = 1;
+                }
+                else
+                {
+                    llevel = 1;
+                }
+            }
+        }
+        
+        cout<< glevel <<" " << n - merged;
+```   
+The time complexity is O(O) to find solution but we need to preprocess out input array there for we need to sort it. the complexity of it will be depend on sorting algorithm I use stl sort. If we use counting sort it will be O(N) but here it is O(NLogN)
+### Explanation of Space Complexity
+There is no need to use extra space for given input array I make everything in place.
+
+
+

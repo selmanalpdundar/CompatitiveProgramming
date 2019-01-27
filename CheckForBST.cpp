@@ -1,19 +1,17 @@
 
 //Problem wants only isBST function
-
-bool isBST(Node* root, Node* l=NULL, Node* r=NULL)
+bool isBST(Node* root, Node* low=NULL, Node* high=NULL)
 {
     if (root == NULL)
         return true;
     
-    if (l != NULL and root->data < l->data)
+    if (low != NULL && root->data < low->data)
         return false;
     
-    if (r != NULL and root->data > r->data)
+    if (high!= NULL && root->data > high->data)
         return false;
 
-    return isBST(root->left, l, root) and
-    isBST(root->right, root, r);
+    return isBST(root->left, low, root) && isBST(root->right, root, high);
 }
 
 bool isBST(Node* root) {

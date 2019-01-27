@@ -1,191 +1,303 @@
 #include <iostream>
+#include <queue>
+#include <stack>
+
+using namespace std;
 
 class Node{
 public:
-    int value;
+    long long int value;
     Node *left;
     Node *right;
+    Node *parent;
     
 public:
-    Node(int value){
+    Node(long long int value){
         this->value = value;
         this->left = nullptr;
         this->right = nullptr;
+        this->parent = nullptr;
     }
 };
 
 class BinarySearchTree{
     
+private:
     Node *root;
+    
 public:
-    void insert(int value){
-        
-        if(root == NULL){
-            root = new Node(value);
-            return;
-        }
-        
-        Node *current = root;
-        Node *parent = current;
-        
-        while(current != nullptr){
-            parent = current;
-            if(current->value >= value){
-                current = current->left;
-            } else{
-                current = current->right;
-            }
-        }
-        if(parent->value >= value){
-            parent->left = new Node(value);
-        } else {
-            parent->right = new Node(value);
-        }
-        
-    }
-    
-    void deleteNode(int value){
-        
-        if(root == NULL) return;
-        
-        Node *current = root;
-        Node *parent = NULL;
-        bool isLeft = false;
-        
-        while(current != NULL){
-            
-            if(current->value == value) break;
-            
-            if(current->value > value){
-                parent = current;
-                current = current->left;
-                isLeft = true;
-            }else{
-                parent = current;
-                current = current->right;
-                isLeft = false;
-            }
-        }
-        
-        if(current == NULL) return;
-        
-        if(current->left == NULL && current->right == NULL){
-            free(current);
-            if(isLeft) parent->left = NULL;
-            else parent->right = NULL;
-            
-        } else if(current->left != NULL && current->right == NULL){
-            
-            if(isLeft) parent->left = current->left;
-            else parent->right = current->left;
-            
-        } else if(current->left == NULL && current-> right != NULL){
-            
-            if(isLeft) parent->left = current->right;
-            else current->right = current->right;
-            
-        }else if( current->left != NULL && current->right != NULL){
-            
-            
-        }
-    }
-    
-    
-    Node *lookup(int value){
-        
-        Node *current = root;
-        
-        if(current == NULL) return NULL;
-        
-        while(current != NULL){
-            
-            if(current->value == value) return current;
-            
-            if(current->value > value) current = current->left;
-            
-            if(current->value < value) current = current->right;
-            
-        }
-        return NULL;
-    }
-    
-    
-    
-    
-    void print(){
-        print(root);
-    }
-    
-    Node *min(){
-        Node *current = root;
-        
-        if(current == NULL) return NULL;
-        
-        while(current->left != NULL) current  = current->left;
-        
-        return current;
-        
-        
-    }
-    
-    
-    Node *max(){
-        Node *current = root;
-        
-        if(current == NULL) return NULL;
-        
-        while(current->right != NULL)  current = current->right;
-        
-        return current;
-    }
-    
-    Node *successor(int value){
-        
-        return NULL;
-    }
-    
-    Node *predecessor(int value){
-        
-        return NULL;
-    }
-    
-    
-    bool isBST(){
-        
-        return false;
-    }
-    
-    
-    void inorder(){
-        
-    }
-    
-    void preorder(){
-        
-    }
-    
-    void postorder(){
-        
-    }
-    
-    
-    // inorder
-    void print(Node *root){
-        
-        if(root == NULL) return;
-        
-        if(root->left != NULL) print(root->left);
-        
-        std::cout<<root->value<<std::endl;
-        
-        if(root->right != NULL) print(root->right);
-    }
-    
-    
-    
+    void insert(int value);
+    void deleteNode(int value);
+    Node* lookup(int value);
+    Node* min();
+    Node* min(Node *startPoint);
+    Node* max();
+    Node* max(Node *startPoint);
+    Node* successor(Node *element);
+    Node* predecessor(Node *element);
+    bool isBST();
+    void BFS(Node *element);
+    void BFS();
+    void inorder();
+    void inorder(Node *element);
+    void preorder();
+    void preorder(Node *element);
+    void postorder();
+    void postorder(Node *element);
+    void print();
+    void print(Node *element);
     
 };
 
+void BinarySearchTree::insert(int value){
+    
+    if(root == NULL){
+        root = new Node(value);
+        return;
+    }
+    
+    Node *current = root;
+    Node *parent = current;
+    
+    while(current != nullptr){
+        parent = current;
+        if(current->value >= value){
+            current = current->left;
+        } else{
+            current = current->right;
+        }
+    }
+    if(parent->value >= value){
+        parent->left = new Node(value);
+        parent->left->parent = parent;
+    } else {
+        parent->right = new Node(value);
+        parent->right->parent = parent;
+    }
+    
+}
+
+void BinarySearchTree::deleteNode(int value){
+    
+    if(root == NULL) return;
+    
+    Node *current = root;
+    Node *parent = NULL;
+    bool isLeft = false;
+    
+    while(current != NULL){
+        
+        if(current->value == value) break;
+        
+        if(current->value > value){
+            parent = current;
+            current = current->left;
+            isLeft = true;
+        }else{
+            parent = current;
+            current = current->right;
+            isLeft = false;
+        }
+    }
+    
+    if(current == NULL) return;
+    
+    if(current->left == NULL && current->right == NULL){
+        free(current);
+        if(isLeft)
+            parent->left = NULL;
+        else
+            parent->right = NULL;
+        
+    } else if(current->left != NULL && current->right == NULL){
+        
+        if(isLeft)
+            parent->left = current->left;
+        else
+            parent->right = current->left;
+        
+    } else if(current->left == NULL && current-> right != NULL){
+        
+        if(isLeft)
+            parent->left = current->right;
+        else
+            current->right = current->right;
+        
+    }else if( current->left != NULL && current->right != NULL){
+        Node *successor = this->successor(current);
+        long long int temp = current->value;
+        current->value = successor->value;
+        successor->value = temp;
+        this->deleteNode(value);
+        
+    }
+}
+
+Node* BinarySearchTree::lookup(int value){
+    
+    Node *current = root;
+    
+    if(current == NULL) return NULL;
+    
+    while(current != NULL){
+        
+        if(current->value == value) return current;
+        
+        if(current->value > value) current = current->left;
+        
+        if(current->value < value) current = current->right;
+        
+    }
+    return NULL;
+}
+
+Node* BinarySearchTree::min(){
+    return this->min(this->root);
+}
+
+Node* BinarySearchTree::min(Node *startPoint){
+    Node *current = startPoint;
+    
+    if(current == NULL) return NULL;
+    
+    while(current->left != NULL) current  = current->left;
+    
+    return current;
+}
+
+Node* BinarySearchTree::max(){
+    return max(this->root);
+}
+
+Node* BinarySearchTree::max(Node *startNode){
+    Node *current = startNode;
+    
+    if(current == NULL) return NULL;
+    
+    while(current->right != NULL)  current = current->right;
+    
+    return current;
+}
+
+Node* BinarySearchTree::successor(Node *element){
+    
+    if(element->right != NULL)
+    {
+       return min(element->right);
+    }
+    else
+    {
+        Node *parent = element->parent;
+      
+        while(parent != NULL && element == parent->right){
+            element = parent;
+            parent = parent->parent;
+        }
+        return parent;
+    }
+}
+
+Node* BinarySearchTree::predecessor(Node *element){
+    
+    return NULL;
+}
+
+bool BinarySearchTree::isBST(){
+    
+    return false;
+}
+
+void BinarySearchTree::inorder(Node *element){
+    
+   
+}
+
+void BinarySearchTree::inorder(){
+    this->inorder(root);
+}
+
+void BinarySearchTree::preorder(){
+    preorder(root);
+}
+
+void BinarySearchTree::preorder(Node *element){
+    if(element == NULL)
+    {
+        return;
+    }
+    stack<Node*> stack;
+    stack.push(element);
+    
+    while(!stack.empty())
+    {
+        Node *node = stack.top();
+        stack.pop();
+        
+        cout<<node->value<<" ";
+        if(node->right)
+        {
+            stack.push(node->right);
+        }
+        
+        if(node->left)
+        {
+            stack.push(node->left);
+        }
+    }
+    
+}
+
+void BinarySearchTree::postorder(){
+    postorder(root);
+}
+
+void BinarySearchTree::postorder(Node *element){
+    if(element != NULL)
+    {
+        return;
+    }
+}
+void BinarySearchTree::BFS(){
+    BFS(root);
+}
+
+void BinarySearchTree::BFS(Node *element){
+    if(element == NULL)
+    {
+        return;
+    }
+    
+    queue<Node*> queue;
+    queue.push(element);
+    
+    
+    while(!queue.empty())
+    {
+        Node *node = queue.front();
+        queue.pop();
+        cout<<node->value<< " ";
+        if(node->left != NULL)
+        {
+            queue.push(node->left);
+        }
+        if(node->right != NULL)
+        {
+            queue.push(node->right);
+        }
+    }
+    
+}
+
+void BinarySearchTree::print(Node *element){
+    if(element == NULL) return;
+    if(element->left != NULL) print(element->left);
+    cout<<element->value<<endl;
+    if(element->right != NULL) print(element->right);
+}
+
+void BinarySearchTree::print(){
+    print(this->root);
+}
 int main(){
     
     BinarySearchTree *bst = new BinarySearchTree();
@@ -201,31 +313,47 @@ int main(){
      3
      */
     
-    bst->insert(100);
-    bst->insert(10);
-    bst->insert(5);
-    bst->insert(11);
-    bst->insert(200);
-    bst->insert(201);
-    bst->insert(400);
+    bst->insert(20);
+    bst->insert(8);
+    bst->insert(22);
     bst->insert(4);
-    bst->insert(3);
-    bst->insert(6);
-    
-    bst->deleteNode(5);
-    //bst->deleteNode(100)
-    //bst->deleteNode(200);
-    //bst->deleteNode(11);
-    
+    bst->insert(12);
+    bst->insert(10);
+    bst->insert(14);
+ 
+  
+
+
     
     // bst->print();
     
-    Node *node  = bst->lookup(5);
+//    Node *node = bst->lookup(14);
+//
+//    cout<<"Lookup(5) : "<<node->value<<endl;
+//    cout<<"Min() : "<<bst->min()->value<<endl;
+//    cout<<"Max() : "<<bst->max()->value<<endl;
+//
+//    cout<<"Successor Of 8 : "<< bst->successor(bst->lookup(8))->value<<endl;
+//    cout<<"Successor Of 10 : "<< bst->successor(bst->lookup(10))->value<<endl;
+//    cout<<"Successor Of 14 : "<< bst->successor(bst->lookup(14))->value<<endl;
+
+    cout<<"Breadth First Search"<<endl;
+    bst->BFS();
+    cout<<endl;
     
-    std::cout<<"Lookup(5) : "<<node->value<<std::endl;
-    std::cout<<"Min() : "<<bst->min()->value<<std::endl;
-    std::cout<<"Max() : "<<bst->max()->value<<std::endl;
+    cout<<"Preorder"<<endl;
+    bst->preorder();
     
+    cout<<endl;
     
+    cout<<"Posorder"<<endl;
+    bst->postorder();
+    
+    cout<<endl;
+    
+    cout<<"Inorder"<<endl;
+    bst->inorder();
+    
+    cout<<endl;
     return 0;
 }

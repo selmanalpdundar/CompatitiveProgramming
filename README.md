@@ -23,10 +23,10 @@ We will take last element as a maximum and start to go leftforward and check eac
 ```      
 The time complexity of algorithm will be linear because we only make a scanning on given input array.
 
-### 2.Explanation of Space Complexity
+### Explanation of Space Complexity
 We will use at most 2n space n space for storing input and n space for storing leaders.
 
-## Kadane's Algorithm   
+## 2.Kadane's Algorithm   
 **Problem Link**: [Kadane's Algorithm ](https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0)    
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](KadanesAlgorithm.cpp)    
@@ -356,22 +356,34 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 ## 12. Check for BST
-**Problem Link**: [Check for BST](https://practice.geeksforgeeks.org/problems/check-for-bst/1) 
-**Source**      : Geeks for Geeks
-**Code**        : [C++](CheckForBST.cpp)    
-**Time Complexity** :   
-**Space Complexity**: 
-
+**Problem Link**: [Check for BST](https://practice.geeksforgeeks.org/problems/check-for-bst/1)    
+**Source**      : Geeks for Geeks    
+**Code**        : [C++](CheckForBST.cpp)           
+**Time Complexity** :  O(N)       
+**Space Complexity**:  O(N)   
+ 
 ### Description
-
+To understand it is binary search tree or not we need to consider 3 properties. The left subtree of a node contains only nodes with keys less than the node’s key and right subtree of a node contains only nodes with keys greater than the node’s key. Both the left and right subtrees must also be binary search trees. We first check right subtree and left subtree after checking both we need to be sure both are BST. In here instead of using maximum and minimum we are using NULL value.  We will check both side individually. if given side is not NULL we are checking it. The point is here the node cannot have bigger value than high and smaller value than low.
 
 ### Explanation of Time Complexity
 ```c++
+bool isBST(Node* root, Node* low=NULL, Node* high=NULL)
+{
+    if (root == NULL)
+        return true;
+    
+    if (low != NULL && root->data < low->data)
+        return false;
+    
+    if (high!= NULL && root->data > high->data)
+        return false;
 
+    return isBST(root->left, low, root) && isBST(root->right, root, high);
+}
 ```   
-
+Every node will be called only once. We do not call any node more than once therefore the complexity will be linear O(N)
 ### Explanation of Space Complexity
-
+we do not use any extra space we only use node if we consider function calles it will be N.
 
 
 ## 13. Preorder Traversal and BST

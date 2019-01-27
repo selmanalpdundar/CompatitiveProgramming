@@ -1,10 +1,21 @@
-#include <iostream>
 
+//Problem wants only isBST function
 
-int main()
+bool isBST(Node* root, Node* l=NULL, Node* r=NULL)
 {
+    if (root == NULL)
+        return true;
+    
+    if (l != NULL and root->data < l->data)
+        return false;
+    
+    if (r != NULL and root->data > r->data)
+        return false;
 
+    return isBST(root->left, l, root) and
+    isBST(root->right, root, r);
+}
 
-    return 0;
-
+bool isBST(Node* root) {
+    isBST(root,NULL,NULL);
 }

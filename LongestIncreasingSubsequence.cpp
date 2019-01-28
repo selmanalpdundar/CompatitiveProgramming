@@ -1,13 +1,18 @@
 #include <iostream>
+#include <vector>
+#include <queue>
 
-int lis(int arr[], int n){
-   
+using namespace std;
+
+int LongestIncreasingSubsequence(vector<int> &arr)
+{
+    long n = arr.size();
     int lis[n];
-
+    
     for(int k = 0; k<n; k++){
         lis[k] = 1;
     }
-
+    
     for(int i=1; i<n; i++){
         for(int j=0; j<i; j++){
             if(arr[i]> arr[j] && lis[i] < lis[j] +1){
@@ -15,22 +20,49 @@ int lis(int arr[], int n){
             }
         }
     }
-
+    
     int max = lis[0];
-
+    
     for(int t=0; t<n; t++){
         if(lis[t] > max){
             max = lis[t];
         }
     }
     return max;
-
+    
 }
 
-int main(){
-
-    int arr[] = {10,22,9,33,21,50,41,60};
-    int n = 8;
-    std::cout<<lis(arr,n)<<std::endl;
+int main()
+{
+    
+    
+    int t = 0;
+    
+    cin>>t;
+    queue<int> output;
+    
+    for(int i=0; i<t; i++){
+        
+        int size = 0;
+        
+        cin>>size;
+        
+        vector<int> input;
+        input.reserve(size);
+        
+        for(int j = 0; j<size; j++){
+            int value = 0;
+            cin>>value;
+            input.push_back(value);
+        }
+        
+        output.push(LongestIncreasingSubsequence(input));
+    }
+    
+    for(int i = 0; i<t; i++){
+        cout<<output.front()<<endl;
+        output.pop();
+    }
+    
     return 0;
 }

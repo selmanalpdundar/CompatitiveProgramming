@@ -10,6 +10,9 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "iostream": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "vector": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp"
     }
 }

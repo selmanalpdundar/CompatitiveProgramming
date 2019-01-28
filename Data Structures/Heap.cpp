@@ -3,8 +3,6 @@
 #include <algorithm>
 #include <iterator>
 
-
-
 using namespace std;
 
 class Heap

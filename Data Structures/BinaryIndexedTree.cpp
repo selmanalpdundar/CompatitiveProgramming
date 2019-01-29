@@ -2,12 +2,6 @@
 
 // Bınary Indexed Tree or Fen-wick Tree
 
-// use case : prefix-sum of array
-// worst case with segment tree it takes n()
-
-// Source : https://github.com/mission-peace/interview/blob/master/src/com/interview/tree/FenwickTree.java
-// Source : https://www.youtube.com/watch?v=CWDQJGaN1gY
-
 /**
      * To get parent
      * 1) 2's complement to get minus of index

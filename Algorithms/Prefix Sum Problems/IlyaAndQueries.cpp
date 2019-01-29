@@ -14,10 +14,11 @@
 #include <vector>
 
 
+using namespace std;
 
 class IlyaAndQueries {
 private:
-    std::vector<bool> vector;
+    vector<bool> vector;
 public:
     IlyaAndQueries(int size, char array[]){
         vector.reserve(size);
@@ -48,7 +49,7 @@ int main(){
     
     IlyaAndQueries *iq = new IlyaAndQueries(m,arr);
 
-    std::cout<<iq->sum(0,5);
+    cout<<iq->sum(0,5);
     
     return 0;
 }

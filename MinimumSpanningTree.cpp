@@ -102,19 +102,14 @@ int main()
     g.vertices = vector<int>(t,t+sizeof(t)/ sizeof(t[0]));
     
     
-    string sizes;
-    getline(cin,sizes);
-    
-    
-    long indexOfSpaceOfSize = sizes.find(" ");
-    string sizeSideOne = sizes.substr(0,indexOfSpaceOfSize);
-    string sizeSideTwo = sizes.substr(indexOfSpaceOfSize+1,sizes.size());
-    
-    for(int i = 0; i<stoi(sizeSideOne); i++){
+    int numberOfVertex = 0 ,  numberOfEdge = 0;
+    cin >> numberOfVertex >> numberOfEdge;
+
+    for(int i = 0; i<numberOfVertex; i++){
         g.vertices.push_back(i+1);
     }
     
-    for(int i = 0; i<stoi(sizeSideTwo); i++)
+    for(int i = 0; i<numberOfEdge; i++)
     {
         string words;
         getline(cin,words);

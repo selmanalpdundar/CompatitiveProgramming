@@ -95,32 +95,26 @@ void Kruskal(Graph &g){
 
 int main()
 {
-  
+    
     char t[] = {'a','b','c','d','e','f'};
     
     Graph g;
     g.vertices = vector<int>(t,t+sizeof(t)/ sizeof(t[0]));
     
     
-    int numberOfVertex = 0 ,  numberOfEdge = 0;
-    cin >> numberOfVertex >> numberOfEdge;
-
+    int numberOfVertex = 0 , numberOfEdge = 0;
+    cin>>numberOfVertex>>numberOfEdge;
+    
     for(int i = 0; i<numberOfVertex; i++){
         g.vertices.push_back(i+1);
     }
     
     for(int i = 0; i<numberOfEdge; i++)
     {
-        string words;
-        getline(cin,words);
-        
-        long indexOfSpaceOfWords = words.find(" ");
-        string wordsSideOne = words.substr(0,indexOfSpaceOfWords);
-        string wordsSideTwo = words.substr(indexOfSpaceOfWords+1, words.size());
-        indexOfSpaceOfWords = wordsSideTwo.find(" ");
-        string wordsSideTwo2 = wordsSideTwo.substr(0,indexOfSpaceOfWords);
-        string wordsSideThree =wordsSideTwo.substr(indexOfSpaceOfWords+1, wordsSideTwo.size());
-        g.edges.push_back(Edge(stoi(wordsSideOne),stoi(wordsSideTwo2),stoi(wordsSideThree)));
+
+        int vertext1 = 0, vertext2 = 0, weight = 0;
+        cin>>vertext1>>vertext2>>weight;
+        g.edges.push_back(Edge(vertext1,vertext2,weight));
     }
     
     Kruskal(g);

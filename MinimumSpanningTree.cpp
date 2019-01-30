@@ -95,13 +95,8 @@ void Kruskal(Graph &g){
 
 int main()
 {
-    
-    char t[] = {'a','b','c','d','e','f'};
-    
     Graph g;
-    g.vertices = vector<int>(t,t+sizeof(t)/ sizeof(t[0]));
-    
-    
+
     int numberOfVertex = 0 , numberOfEdge = 0;
     cin>>numberOfVertex>>numberOfEdge;
     
@@ -111,7 +106,6 @@ int main()
     
     for(int i = 0; i<numberOfEdge; i++)
     {
-
         int vertext1 = 0, vertext2 = 0, weight = 0;
         cin>>vertext1>>vertext2>>weight;
         g.edges.push_back(Edge(vertext1,vertext2,weight));

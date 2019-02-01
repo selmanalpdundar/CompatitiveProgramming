@@ -6,8 +6,6 @@ using namespace std;
 
 ll merge(vector<ll> &arr,vector<ll> &temp, ll left, ll mid, ll right);
 
-
-
 ll mergeSort(vector<ll> &arr, vector<ll> &temp, ll left, ll right)
 {
     ll mid, inversionCount = 0;
@@ -100,8 +98,5 @@ int main()
         temp.reserve(size);
         cout<< mergeSort(inputs.at(k), temp, 0, size-1)<<endl;
     }
-    
-    
-    
     return 0;
 }

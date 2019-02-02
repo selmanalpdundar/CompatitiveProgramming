@@ -406,30 +406,34 @@ We are using stack and it cannot be more than n. we just push and pop each eleme
 
 
 ## 14.Maximum Path Sum
-**Problem Link**: [Maximum Path Sum](https://practice.geeksforgeeks.org/problems/maximum-path-sum/1) 
-**Source**      : Geeks for Geeks
-**Code**        : [C++](MaximumPathSum.cpp)    
-**Time Complexity** :   
-**Space Complexity**: 
+**Problem Link**: [Maximum Path Sum](https://practice.geeksforgeeks.org/problems/maximum-path-sum/1)   
+**Source**      : Geeks for Geeks   
+**Code**        : [C++](MaximumPathSum.cpp)      
+**Time Complexity** :  O(N)    
+**Space Complexity**:  O(N)    
 
 ### Description
+For each node there can be four ways that the max path goes through the node. 
+1. Node only
+2. Max path through Left Child + Node
+3. Max path through Right Child + Node
+4. Max path through Left Child + Node + Max path through Right Child
 
+The idea is to keep trace of four paths and pick up the max one in the end. An important thing to note is, root of every subtree need to return maximum path sum such that at most one child of root is involved. This is needed for parent function call. In below code, this sum is stored in ‘max_single’ and returned by the recursive function.
 
 ### Explanation of Time Complexity
-```c++
-
-```   
+Time complexity is n becuase we will only execute number of node.
 
 ### Explanation of Space Complexity
-
+Space complexiy is n it is number of node.
 
 
 ## 15.Ilya and Queries
-**Problem Link**: [Ilya and Queries](http://codeforces.com/problemset/problem/313/B?locale=en) 
-**Source**      : Code Forces
-**Code**        : [C++](IlyaAndQueries.cpp)    
-**Time Complexity** :   
-**Space Complexity**: 
+**Problem Link**: [Ilya and Queries](http://codeforces.com/problemset/problem/313/B?locale=en)    
+**Source**      : Code Forces   
+**Code**        : [C++](IlyaAndQueries.cpp)      
+**Time Complexity** : O(N)    
+**Space Complexity**: O(N) 
 
 ### Description
 
@@ -443,11 +447,11 @@ We are using stack and it cannot be more than n. we just push and pop each eleme
 
 
 ## 16.Alice, Bob and Chocolate
-**Problem Link**: [Alice, Bob and Chocolate](http://codeforces.com/problemset/problem/6/C?locale=en) 
-**Source**      : Code Forces
-**Code**        : [C++](AliceBobAndChocolate.cpp)    
-**Time Complexity** :   
-**Space Complexity**: 
+**Problem Link**: [Alice, Bob and Chocolate](http://codeforces.com/problemset/problem/6/C?locale=en)   
+**Source**      : Code Forces   
+**Code**        : [C++](AliceBobAndChocolate.cpp)      
+**Time Complexity** :     
+**Space Complexity**:    
 
 ### Description
 

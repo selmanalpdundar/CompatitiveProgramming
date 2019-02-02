@@ -453,21 +453,36 @@ It take n time to construct it.
 We only store sum array extra and it space is also N.
 
 ## 16.Alice, Bob and Chocolate
-**Problem Link**: [Alice, Bob and Chocolate](http://codeforces.com/problemset/problem/6/C?locale=en)   
-**Source**      : Code Forces   
-**Code**        : [C++](AliceBobAndChocolate.cpp)      
-**Time Complexity** :     
-**Space Complexity**:    
+**Problem Link**: [Alice, Bob and Chocolate](http://codeforces.com/problemset/problem/6/C?locale=en)     
+**Source**      : Code Forces     
+**Code**        : [C++](AliceBobAndChocolate.cpp)        
+**Time Complexity** : O(N)   
+**Space Complexity**: O(N)   
 
 ### Description
-
+We start following our inputs from both ways left and right. The problem give privilege to Alice to eat. If Alice eats less than or equal
+Bob cannot eat therefore in loop Alice has privilege to eat first.   
 
 ### Explanation of Time Complexity
 ```c++
-
+   while(left<=right)
+    {
+        if(Alice<=Bob)
+        {
+            Alice+=inputs[left++];
+            NumberOfBarOfAlice++;
+        }
+        else
+        {
+            Bob+=inputs[right--];
+            NumberOFBarOfBob++;
+        }
+    }
 ```   
+We will iterate at most N times and we do not do anything else.
 
 ### Explanation of Space Complexity
+We only use given input array nothing else.
 
 ## 17. Number of Ways
 **Problem Link**: [Number of Ways](http://codeforces.com/problemset/problem/466/C?locale=en) 

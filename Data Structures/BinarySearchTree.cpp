@@ -46,6 +46,8 @@ public:
     void postorder(Node *element);
     void print();
     void print(Node *element);
+    void eulerTour();
+    void eulerTour(Node *element);
     
 };
 
@@ -183,12 +185,12 @@ Node* BinarySearchTree::successor(Node *element){
     
     if(element->right != NULL)
     {
-       return min(element->right);
+        return min(element->right);
     }
     else
     {
         Node *parent = element->parent;
-      
+        
         while(parent != NULL && element == parent->right){
             element = parent;
             parent = parent->parent;
@@ -209,7 +211,13 @@ bool BinarySearchTree::isBST(){
 
 void BinarySearchTree::inorder(Node *element){
     
-   
+    if(element == NULL)
+    { return; }
+    inorder(element->left);
+    cout<<element->value << " ";
+    inorder(element->right);
+
+    
 }
 
 void BinarySearchTree::inorder(){
@@ -252,16 +260,19 @@ void BinarySearchTree::postorder(){
 }
 
 void BinarySearchTree::postorder(Node *element){
-    if(element != NULL)
-    {
-        return;
-    }
+    if(element == NULL)
+    { return; }
+    postorder(element->left);
+    postorder(element->right);
+    cout<<element->value << " ";
 }
-void BinarySearchTree::BFS(){
+void BinarySearchTree::BFS()
+{
     BFS(root);
 }
 
-void BinarySearchTree::BFS(Node *element){
+void BinarySearchTree::BFS(Node *element)
+{
     if(element == NULL)
     {
         return;
@@ -288,30 +299,41 @@ void BinarySearchTree::BFS(Node *element){
     
 }
 
-void BinarySearchTree::print(Node *element){
+void BinarySearchTree::print(Node *element)
+{
     if(element == NULL) return;
     if(element->left != NULL) print(element->left);
     cout<<element->value<<endl;
     if(element->right != NULL) print(element->right);
 }
 
-void BinarySearchTree::print(){
+void BinarySearchTree::print()
+{
     print(this->root);
 }
+
+
+void BinarySearchTree::eulerTour()
+{
+    this->eulerTour(this->root);
+}
+
+void BinarySearchTree::eulerTour(Node *element)
+{
+    if(element!= nullptr)
+    {
+        cout<<element->value << " ";
+        eulerTour(element->left);
+        eulerTour(element->right);
+        cout<<element->value<<" ";
+        
+    }
+}
+
 int main(){
     
     BinarySearchTree *bst = new BinarySearchTree();
-    /*
-     100
-     /    \
-     10      200
-     /  \    /   \
-     5    11 201  400
-     / \
-     4   6
-     /
-     3
-     */
+
     
     bst->insert(20);
     bst->insert(8);
@@ -320,40 +342,50 @@ int main(){
     bst->insert(12);
     bst->insert(10);
     bst->insert(14);
- 
-  
-
-
     
-    // bst->print();
     
-//    Node *node = bst->lookup(14);
-//
-//    cout<<"Lookup(5) : "<<node->value<<endl;
-//    cout<<"Min() : "<<bst->min()->value<<endl;
-//    cout<<"Max() : "<<bst->max()->value<<endl;
-//
-//    cout<<"Successor Of 8 : "<< bst->successor(bst->lookup(8))->value<<endl;
-//    cout<<"Successor Of 10 : "<< bst->successor(bst->lookup(10))->value<<endl;
-//    cout<<"Successor Of 14 : "<< bst->successor(bst->lookup(14))->value<<endl;
-
+    
+    
+    cout<<"Print BST"<<endl;
+     bst->print();
+    
+    Node *node = bst->lookup(14);
+   
+    cout<<endl;
+    
+    cout<<"Lookup(14) : "<<node->value<<endl;
+    cout<<"Min() : "<<bst->min()->value<<endl;
+    cout<<"Max() : "<<bst->max()->value<<endl;
+    
+    cout<<endl;
+    
+    cout<<"Successor Of 8 : "<< bst->successor(bst->lookup(8))->value<<endl;
+    cout<<"Successor Of 10 : "<< bst->successor(bst->lookup(10))->value<<endl;
+    cout<<"Successor Of 14 : "<< bst->successor(bst->lookup(14))->value<<endl;
+    
+    cout<<endl;
     cout<<"Breadth First Search"<<endl;
     bst->BFS();
-    cout<<endl;
+    
+    cout<<endl<<endl;
     
     cout<<"Preorder"<<endl;
     bst->preorder();
     
-    cout<<endl;
+    cout<<endl<<endl;
     
     cout<<"Posorder"<<endl;
     bst->postorder();
     
-    cout<<endl;
+    cout<<endl<<endl;
     
     cout<<"Inorder"<<endl;
     bst->inorder();
     
-    cout<<endl;
+    cout<<endl<<endl;
+    cout<<"Euler Tour"<<endl;
+    bst->eulerTour();
+    
+    cout<<endl<<endl;
     return 0;
 }

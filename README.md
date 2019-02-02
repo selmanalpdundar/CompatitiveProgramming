@@ -436,15 +436,21 @@ Space complexiy is n it is number of node.
 **Space Complexity**: O(N) 
 
 ### Description
-
-
+We created a sum array to store s<sub>i</sub> = s<sub>i+1</sub>. After this we can make query in constant time.
 ### Explanation of Time Complexity
 ```c++
-
+  for(int i = 1; i<m; i++){
+        if(array.at(i) == array.at(i - 1)){
+            sum[i] = sum[i - 1] + 1;
+        } else {
+            sum[i] = sum[i - 1];
+        }
+    }
 ```   
-
+The time complexity of query is constant becuase we already store answers in sum array. But we need to build sum array to make this query
+It take n time to construct it.
 ### Explanation of Space Complexity
-
+We only store sum array extra and it space is also N.
 
 ## 16.Alice, Bob and Chocolate
 **Problem Link**: [Alice, Bob and Chocolate](http://codeforces.com/problemset/problem/6/C?locale=en)   

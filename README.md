@@ -267,23 +267,23 @@ There is no need to use extra space for given input array I make everything in p
 
 ### Explanation of Space Complexity
 
-
 ## 9.Inversion Count
-**Problem Link**: [Inversion Count](https://www.spoj.com/problems/INVCNT/) 
-**Source**      : Sphere Online Judge  
-**Code**        : [C++](InversionCount.cpp)    
-**Time Complexity** : O(NLogN)   
-**Space Complexity**:  O(N)
+**Problem Link**: [Inversion Count](https://www.spoj.com/problems/INVCNT/)   
+**Source**      : Sphere Online Judge    
+**Code**        : [C++](InversionCount.cpp)     
+**Time Complexity** : O(NLogN)    
+**Space Complexity**:  O(N)  
 
 ### Description
-The basic approach is checking all element with other and we will have n^2 time complexity. With merge sort instead of checking everthing we divide all input untill it will
+Instead of couting every inversion as one piece we dive them in to sub problems. We know number of inversion in left and right side of the array
+an while merging we are counting inversions. Therefore to get number of inversions we need to add number of inversiıns in left and rigt subarray and merge.
 
 ### Explanation of Time Complexity
-```c++
-
-```   
+The time complexity is NlogN and it comes from merge sort in side problem.
 
 ### Explanation of Space Complexity
+We are using in place sorting algorthim for that reason we will not use any extra space for thar reason
+
 
 ## 10.Largest Even Number
 **Problem Link**: [Largest Even Number](https://practice.geeksforgeeks.org/problems/largest-even-number/0) 
@@ -356,11 +356,11 @@ We use 2n space because of counting sort counting sor need n more space to  sort
 
 
 ## 12. Check for BST
-**Problem Link**: [Check for BST](https://practice.geeksforgeeks.org/problems/check-for-bst/1)    
-**Source**      : Geeks for Geeks    
-**Code**        : [C++](CheckForBST.cpp)           
-**Time Complexity** :  O(N)       
-**Space Complexity**:  O(N)   
+**Problem Link**: [Check for BST](https://practice.geeksforgeeks.org/problems/check-for-bst/1)      
+**Source**      : Geeks for Geeks      
+**Code**        : [C++](CheckForBST.cpp)             
+**Time Complexity** :  O(N)        
+**Space Complexity**:  O(N)    
  
 ### Description
 To understand it is binary search tree or not we need to consider 3 properties. The left subtree of a node contains only nodes with keys less than the node’s key and right subtree of a node contains only nodes with keys greater than the node’s key. Both the left and right subtrees must also be binary search trees. We first check right subtree and left subtree after checking both we need to be sure both are BST. In here instead of using maximum and minimum we are using NULL value.  We will check both side individually. if given side is not NULL we are checking it. The point is here the node cannot have bigger value than high and smaller value than low.
@@ -387,22 +387,22 @@ we do not use any extra space we only use node if we consider function calles it
 
 
 ## 13. Preorder Traversal and BST
-**Problem Link**: [Preorder Traversal and BST](https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0) 
-**Source**      : Geeks for Geeks
-**Code**        : [C++](PreorderTraversalAndBST.cpp)    
-**Time Complexity** :   
-**Space Complexity**: 
+**Problem Link**: [Preorder Traversal and BST](https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0)  
+**Source**      : Geeks for Geeks  
+**Code**        : [C++](PreorderTraversalAndBST.cpp)        
+**Time Complexity** :O(N)   
+**Space Complexity**: O(N)  
 
 ### Description
+Preorder traversal of BST will always have properties that are root element first followed by left sub tree and
+ left sub tree followed by right sub tree. If the value to be placed on top of Stack  is larger than top of stack, then we will push to hold new value. If the value to be placed on top of Stack is smaller than variable top of Stack, then we will stop our execution because it says that given preorder traversal is invalid traversal sequence of BST.
 
 
 ### Explanation of Time Complexity
-```c++
-
-```   
+We will not push any element to stack more than one. Inner loop will be execute only n time. The outer loop also same for that reason we will have O(n) time complexity.
 
 ### Explanation of Space Complexity
-
+We are using stack and it cannot be more than n. we just push and pop each element of array only once.
 
 
 ## 14.Maximum Path Sum

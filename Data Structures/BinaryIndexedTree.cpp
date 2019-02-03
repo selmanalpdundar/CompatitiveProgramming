@@ -25,7 +25,7 @@ int getNext(int index){
     return index + (index & -index);
 }
 
-
+// Add
 void updateBinaryIndexedTree(int binaryIndexedTree[], int size, int index, int value){
     while(index <= size){
         binaryIndexedTree[index] += value;
@@ -37,7 +37,7 @@ void constructTree(int input[], int binaryIndexedTree[], int size){
         updateBinaryIndexedTree(binaryIndexedTree,size+1,i,input[i-1]);
     }
 }
-
+//Sum
 int getSum(int binaryIndexedTree[], int index){
     index += 1;
     int sum = 0;

@@ -413,13 +413,7 @@ We are using stack and it cannot be more than n. we just push and pop each eleme
 **Space Complexity**:  O(N)    
 
 ### Description
-For each node there can be four ways that the max path goes through the node. 
-1. Node only
-2. Max path through Left Child + Node
-3. Max path through Right Child + Node
-4. Max path through Left Child + Node + Max path through Right Child
-
-The idea is to keep trace of four paths and pick up the max one in the end. An important thing to note is, root of every subtree need to return maximum path sum such that at most one child of root is involved. This is needed for parent function call. In below code, this sum is stored in ‘max_single’ and returned by the recursive function.
+For each node there can be four ways that the max path goes through the node. node only, max path through left child plus node , max path through right chhild plus node, and max path through left child plus node plus max path through right child. The idea is to keep trace of four paths and pick up the max one in the end. An important thing to note is, root of every subtree need to return maximum path sum such that at most one child of root is involved. This is needed for parent function call. In below code, this sum is stored in ‘max_single’ and returned by the recursive function.
 
 ### Explanation of Time Complexity
 Time complexity is n becuase we will only execute number of node.

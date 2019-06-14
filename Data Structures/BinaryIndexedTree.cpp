@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 // Bınary Indexed Tree or Fen-wick Tree
 
 /**
@@ -56,7 +56,7 @@ int main(){
      
     constructTree(input,binaryIndexedTree,7);
 
-    std::cout<< getSum(binaryIndexedTree,4)<< std::endl;
+    cout<< getSum(binaryIndexedTree,4)<<endl;
 
     return 0;
 }

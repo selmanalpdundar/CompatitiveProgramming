@@ -556,22 +556,38 @@ O(logn) time.
 
 
 ## 20.Megacity
-**Problem Link**: [Megacity](http://codeforces.com/problemset/problem/424/B?locale=en)
-**Source**      : Code Forces
-**Code**        : [C++](MegaCity.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [Megacity](http://codeforces.com/problemset/problem/424/B?locale=en)   
+**Source**      : Code Forces    
+**Code**        : [C++](MegaCity.cpp)      
+**Time Complexity** : O(n) + O(nlogn) for sorting   
+**Space Complexity**: O(n)    
 
 ### Description
-
+First we get inputs and while getting input we calculate cumulative sum of the population.
+We first check it is equal or over a million. If it is not equal or over a million return -1;
+While taking value of the coordinates we calculate x^2+y^2 to use later for finding radius.
+We iterate on neighbor and take sum of the population when we are over 1 million take the square root of x^2 + y^2  
 
 ### Explanation of Time Complexity
 ```c++
 
+sort(location.begin(),location.end());
+
+for(int i=0; i<NumberOfLocations; i++)
+{
+    population+=location[i][1];
+
+    if(population>=pow(10,6))
+    {
+        cout<<setprecision(8)<<sqrt((long double)location[i][0])<<endl;
+        break;
+    }
+}
 ```   
-
+In here dominant time complexity is the sorting. It will depend on the sorting algorithm.
+Also, for checking locations and population will take at most O(n) time.
 ### Explanation of Space Complexity
-
+There is no need extra memory.
 
 
 ## 21.Find Pair

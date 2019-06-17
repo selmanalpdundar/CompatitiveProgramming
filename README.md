@@ -537,21 +537,21 @@ We just need to suffix array that is the same size with the input array so our s
 
 
 ## 19. Update the Array
-**Problem Link**: [ Update the Array](https://www.spoj.com/problems/UPDATEIT/)
-**Source**      : Sphere Online Judge
-**Code**        : [C++](UpdateTheArray.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [ Update the Array](https://www.spoj.com/problems/UPDATEIT/)       
+**Source**      : Sphere Online Judge     
+**Code**        : [C++](UpdateTheArray.cpp)       
+**Time Complexity** : Both Operation O(lgn)    
+**Space Complexity**: O(n)     
 
 ### Description
-
+For update the array problem, we are using binary index tree. In binary index three update and get value of element takes
+O(logn) time.
 
 ### Explanation of Time Complexity
-```c++
-
-```   
+// Complexity of Time the Algorithm same with Binary indexed three structure
 
 ### Explanation of Space Complexity
+// Complexity of Space the Algorithm same with Binary indexed three structure.
 
 
 

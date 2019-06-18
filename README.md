@@ -874,22 +874,21 @@ There is no need extra memory.
 
 
 ## 36.Minimum Spanning Tree
-**Problem Link**: [Minimum Spanning Tree](https://www.spoj.com/problems/MST/)
-**Source**      : Sphere Online Judge
-**Code**        : [C++](MinimumSpanningTree.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [Minimum Spanning Tree](https://www.spoj.com/problems/MST/)   
+**Source**      : Sphere Online Judge     
+**Code**        : [C++](MinimumSpanningTree.cpp)      
+**Time Complexity** : O(|E|+|V|log|V|)     
+**Space Complexity**:   
 
 ### Description
-
+This had been explained in class notes.
 
 ### Explanation of Time Complexity
-```c++
-
-```   
+This had been explained in class notes.
 
 ### Explanation of Space Complexity
 
+This had been explained in class notes.
 
 
 

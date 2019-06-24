@@ -1030,27 +1030,25 @@ This had been explained in class notes.
 
 
 ## 44. 0 - 1 Knapsack Problem
-**Problem Link**: [0 - 1 Knapsack Problem](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0)
-**Source**      : Geeks for Geeks
+**Problem Link**: [0 - 1  Knapsack Problem](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0)   
+**Source**      : Geeks for Geeks    
 **Code**        : [C++](KnapsackProblem)    
 **Time Complexity** :   
 **Space Complexity**:
 
 ### Description
-
+This had been explained in class notes.    
 
 ### Explanation of Time Complexity
-```c++
-
-```   
+This had been explained in class notes.      
 
 ### Explanation of Space Complexity
-
+This had been explained in class notes.    
 
 ## 45.Longest Increasing Subsequence
-**Problem Link**: [Longest Increasing Subsequence](https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0)
-**Source**      : Geeks for Geeks
-**Code**        : [C++](LongestIncreasingSubsequence.cpp)    
+**Problem Link**: [Longest Increasing Subsequence](https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0)     
+**Source**      : Geeks for Geeks    
+**Code**        : [C++](LongestIncreasingSubsequence.cpp)       
 **Time Complexity** :   
 **Space Complexity**:
 
@@ -1067,9 +1065,9 @@ This had been explained in class notes.
 
 
 ## 46.Minimum Number of Jumps
-**Problem Link**: [Minimum Number of Jumps](https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0)
-**Source**      : Geeks for Geeks
-**Code**        : [C++](MinimumNumberOfJumps.cpp)    
+**Problem Link**: [Minimum Number of Jumps](https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0)    
+**Source**      : Geeks for Geeks   
+**Code**        : [C++](MinimumNumberOfJumps.cpp)       
 **Time Complexity** :   
 **Space Complexity**:
 
@@ -1127,10 +1125,10 @@ This had been explained in class notes.
 
 ## 49.Subset Sum Problem
 **Problem Link**: [Subset Sum Problem](https://practice.geeksforgeeks.org/problems/subset-sum-problem/0)
-**Source**      : Geeks for Geeks
-**Code**        : [C++](SubsetSumProblem.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Source**      : Geeks for Geeks    
+**Code**        : [C++](SubsetSumProblem.cpp)       
+**Time Complexity** :O(nW) with dynamic programming
+**Space Complexity**:O(nW)   
 
 ### Description
 

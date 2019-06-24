@@ -1032,7 +1032,7 @@ This had been explained in class notes.
 ## 44. 0 - 1 Knapsack Problem
 **Problem Link**: [0 - 1  Knapsack Problem](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0)      
 **Source**      : Geeks for Geeks      
-**Code**        : [C++](KnapsackProblem)      
+**Code**        : [C++](KnapsackProblem.cpp)      
 **Time Complexity** : O(nW) with dynamic programming     
 **Space Complexity**: O(nW)     
 

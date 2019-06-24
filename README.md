@@ -1030,11 +1030,11 @@ This had been explained in class notes.
 
 
 ## 44. 0 - 1 Knapsack Problem
-**Problem Link**: [0 - 1  Knapsack Problem](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0)   
-**Source**      : Geeks for Geeks    
-**Code**        : [C++](KnapsackProblem)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [0 - 1  Knapsack Problem](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0)      
+**Source**      : Geeks for Geeks      
+**Code**        : [C++](KnapsackProblem)      
+**Time Complexity** : O(nW) with dynamic programming     
+**Space Complexity**: O(nW)     
 
 ### Description
 This had been explained in class notes.    
@@ -1127,8 +1127,8 @@ This had been explained in class notes.
 **Problem Link**: [Subset Sum Problem](https://practice.geeksforgeeks.org/problems/subset-sum-problem/0)
 **Source**      : Geeks for Geeks    
 **Code**        : [C++](SubsetSumProblem.cpp)       
-**Time Complexity** :O(nW) with dynamic programming
-**Space Complexity**:O(nW)   
+**Time Complexity** :
+**Space Complexity**:
 
 ### Description
 

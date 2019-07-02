@@ -38,7 +38,7 @@ int main()
     int t = 0;
 
     cin>>t;
-    queue<int> output;
+    int outputs[t];
 
     for(int i=0; i<t; i++){
 
@@ -55,12 +55,11 @@ int main()
             input.push_back(value);
         }
 
-        output.push(LongestIncreasingSubsequence(input));
+        outputs[i] = LongestIncreasingSubsequence(input);
     }
 
     for(int i = 0; i<t; i++){
-        cout<<output.front()<<endl;
-        output.pop();
+        cout<<outputs[i]<<endl;
     }
 
     return 0;

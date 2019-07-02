@@ -8,6 +8,9 @@ int main(){
   int numberOfTeam = 0 ;
   cin>>numberOfTeam;
 
+
+
   return 0;
+
 
 }

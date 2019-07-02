@@ -952,21 +952,29 @@ This had been explained in class notes.
 
 
 ## 40.Lexicographically Maximum Subsequence
-**Problem Link**: [Lexicographically Maximum Subsequence](http://codeforces.com/problemset/problem/196/A?locale=en)
-**Source**      : Code Forces
-**Code**        : [C++](LexicographicallyMaximumSubsequence.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [Lexicographically Maximum Subsequence](http://codeforces.com/problemset/problem/196/A?locale=en)      
+**Source**      : Code Forces    
+**Code**        : [C++](LexicographicallyMaximumSubsequence.cpp)      
+**Time Complexity** : O(n)     
+**Space Complexity**: O(n)     
 
 ### Description
-
+Take last element char and create a local maximum string then go on from right to left and if the current char equal or bigger take it.
 
 ### Explanation of Time Complexity
 ```c++
-
+ for(int i=size; i>=0; i--){
+       
+        if(text.at(i)>=current){
+            
+            localMax = text.at(i) + localMax;
+            current = text.at(i);
+        }
+    }
 ```   
-
+It is just scanning given string from right to left.
 ### Explanation of Space Complexity
+There is no need any extra space.
 
 
 

@@ -15,6 +15,7 @@ int main(){
     int items[n];
 
     vector< pair<int,int> >
+    
     for(int i = 0; i<n; i++){
       int temp  = 0;
       cin>>temp;

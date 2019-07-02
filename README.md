@@ -1012,21 +1012,22 @@ This had been explained in class notes.
 
 
 ## 43.Longest Common Subsequence
-**Problem Link**: [Longest Common Subsequence](https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0)
-**Source**      : Geeks for Geeks
-**Code**        : [C++](LongestCommonSubsequence.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [Longest Common Subsequence](https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0)   
+**Source**      : Geeks for Geeks   
+**Code**        : [C++](LongestCommonSubsequence.cpp)        
+**Time Complexity** : O(n*m)      
+**Space Complexity**: O(n*m)     
 
 ### Description
+This had been explained in class notes.    
 
 
 ### Explanation of Time Complexity
-```c++
-
-```   
+This had been explained in class notes.    
+ 
 
 ### Explanation of Space Complexity
+This had been explained in class notes.    
 
 
 ## 44. 0 - 1 Knapsack Problem

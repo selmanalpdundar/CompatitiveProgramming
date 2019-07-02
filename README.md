@@ -1104,21 +1104,22 @@ This had been explained in class notes.
 
 
 ## 48.Longest Bitonic Subsequence
-**Problem Link**: [Longest Bitonic Subsequence](https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0)
-**Source**      : Geeks for Geeks
-**Code**        : [C++](LongestBitonicSubsequence.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [Longest Bitonic Subsequence](https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0)    
+**Source**      : Geeks for Geeks    
+**Code**        : [C++](LongestBitonicSubsequence.cpp)       
+**Time Complexity** : O(n*n) It is dependent on lis complexity   
+**Space Complexity**: O(n)   
 
 ### Description
+This had been explained in class notes.    
 
 
 ### Explanation of Time Complexity
-```c++
+This had been explained in class notes.    
 
-```   
 
 ### Explanation of Space Complexity
+This had been explained in class notes.    
 
 
 

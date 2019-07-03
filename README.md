@@ -5,7 +5,7 @@
 **Source**      : Geeks for Geeks  
 **Code**        : [C++](LeadersInArray.cpp)  
 **Time Complexity**  : O(N)  
-**Space Complexity**: O(N)
+**Space Complexity**: O(N) 
 
 ### Description
 We will take last element as a maximum and start to go leftforward and check each element witch this maximum if any of them bigger then current maximum push it to leaders and change current maximum with this number.
@@ -1135,22 +1135,20 @@ This had been explained in class notes.
 
 
 ## 49.Subset Sum Problem
-**Problem Link**: [Subset Sum Problem](https://practice.geeksforgeeks.org/problems/subset-sum-problem/0)
-**Source**      : Geeks for Geeks    
-**Code**        : [C++](SubsetSumProblem.cpp)       
-**Time Complexity** :
-**Space Complexity**:
+**Problem Link**: [Subset Sum Problem](https://practice.geeksforgeeks.org/problems/subset-sum-problem/0)      
+**Source**      : Geeks for Geeks          
+**Code**        : [C++](SubsetSumProblem.cpp)            
+**Time Complexity** : O(n*subsetsum)    
+**Space Complexity**: O(n*subsetsum)     
 
 ### Description
-
+This had been explained in class notes.    
 
 ### Explanation of Time Complexity
-```c++
-
-```   
+This had been explained in class notes.     
 
 ### Explanation of Space Complexity
-
+This had been explained in class notes.    
 
 
 

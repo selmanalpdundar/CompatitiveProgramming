@@ -1,6 +1,8 @@
 #include <iostream>
 
+
 void merge(int arr[], int low, int middle, int high){
+    
     int rightCounter, leftCounter, generalCounter;
     
     int sizeOfLeftArray =  middle - low + 1;

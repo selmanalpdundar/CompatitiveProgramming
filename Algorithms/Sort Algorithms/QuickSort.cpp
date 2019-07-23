@@ -1,44 +1,65 @@
 #include <iostream>
 
-int partition(int arr[],int low, int high){
-    int pivot = arr[high];
-    int i = low - 1;
+using namespace std;
 
-    for(int j= low;  j< high;  j++){
-        if(arr[j] <= pivot){
-            i++;
-            int temp = arr[j];
-            arr[j] = arr[i];
-            arr[i] = temp;
-        }
-    }
-     int temp = arr[high];
-     arr[high] = arr[i+1];
-     arr[i + 1] = temp;
+void swap(int arr[],int left,int right);
+void quicksort(int arr[],int left, int right);
+void quicksort(int arr[], int size);
+int partition(int arr[],int left, int right, int pivot);
+void print(int arr[],int size);
 
-    return i+1;
-}
-
-
-void quicksort(int arr[],int low, int high){
-    if(low<high){
-        int indexOfSmallestElement = partition(arr,low,high);
-        quicksort(arr,low,indexOfSmallestElement-1);
-        quicksort(arr,indexOfSmallestElement+1,high);
-    }
-}
-
-
-void print(int arr[],int n){
-
-    for(int i = 0; i<n; i++){
-        std::cout<<arr[i]<<std::endl;
-    }
-}
 
 int main(){
     int arr[] = {9,7,2,3,6,2,4,1,8,5};
-    print(arr,10);
-    quicksort(arr,0,9);
-     print(arr,10);
+   
+    int size = sizeof(arr) / sizeof(typeof(arr[0]));
+    print(arr,size);
+    quicksort(arr, size);
+    print(arr,size);
+}
+
+
+int partition(int arr[],int left, int right, int pivot){
+    
+    while(left<=right){
+        
+        while(arr[left] < pivot){ left++; }
+        
+        while(arr[right] > pivot){ right--; }
+        
+        if(left <= right){
+            swap(arr, left, right);
+            left++;
+            right--;
+        }
+    }
+    
+    return left;
+}
+
+void quicksort(int arr[],int size){
+    quicksort(arr,0,size-1);
+}
+
+void quicksort(int arr[],int left, int right){
+    
+    if(left >= right) return;
+    
+    int pivot = arr[(left + right) / 2];
+    int indexOfSmallestElement = partition(arr,left,right,pivot);
+    quicksort(arr,left,indexOfSmallestElement-1);
+    quicksort(arr,indexOfSmallestElement+1,right);
+
+}
+
+void print(int arr[],int size){
+    for(int i = 0; i<size; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+void swap(int arr[],int left,int right){
+    int temp = arr[left];
+    arr[left] = arr[right];
+    arr[right] = temp;
 }

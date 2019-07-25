@@ -3,41 +3,58 @@
 #include <algorithm>
 
 
+#define ll long long
 
 using namespace std;
 
 int main(){
     std::ios_base::sync_with_stdio(false);
-
-    int n = 0; // number of integer
-    int k = 0; // the index of pair
+    
+    ll n = 0; // number of integer
+    ll k = 0; // the index of pair
     cin>>n>>k;
-
-    vector<int> inputs;
+    
+    vector<ll> inputs;
     inputs.reserve(n);
-
-    for(int i =0; i<n; i++){
-        int number = 0;
+    
+    for(ll i =0; i<n; i++){
+        ll number = 0;
         cin>>number;
         inputs[i] = number;
     }
-
-    sort(inputs.begin(),inputs.end()+n);
-
-    vector< pair<int,int > > pairs;
-
-    for(int i = 0; i<n; i++){
-        for(int j = 0; j<n; j++){
-            int first = inputs[i];
-            int second = inputs[j];
-
-            pair<int, int> pair = make_pair(first, second);
-            pairs.push_back(pair);
-
-        }
+    
+    sort(inputs.begin(),inputs.end());
+    
+    
+    
+    if( k < n ){
+        cout <<inputs[0] << " " <<inputs[k-1];
+    } else {
+        
+        ll first = inputs[(k-1)/n];
+        
+ 
+        
+        cout <<first << " " << endl;
     }
-
-    cout<<pairs[k-1].first<<" "<<pairs[k-1].second;
-
+//    vector< pair<ll,ll > > pairs;
+//
+//    for(ll i = 0; i<n; i++){
+//
+//        ll first = inputs[i];
+//
+//        for(int j = 0; j<n; j++){
+//
+//            ll second = inputs[j];
+//
+//            pair<ll, ll> pair = make_pair(first, second);
+//            pairs.push_back(pair);
+//
+//        }
+//    }
+//
+//    sort(pairs.begin(),pairs.end());
+//    cout<<pairs[k-1].first<<" "<<pairs[k-1].second;
+    
     return 0;
 }

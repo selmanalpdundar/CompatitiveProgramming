@@ -295,7 +295,7 @@ There is no need to use extra space for given input array I make everything in p
 
 ### Description
 Instead of couting every inversion as one piece we dive them in to sub problems. We know number of inversion in left and right side of the array
-an while merging we are counting inversions. Therefore to get number of inversions we need to add number of inversiıns in left and rigt subarray and merge.
+an while merging we are counting inversions. Therefore to get number of inversions we need to add number of inversions in left and rigt subarray and merge.
 
 ### Explanation of Time Complexity
 The time complexity is NlogN and it comes from merge sort in side problem.
@@ -312,7 +312,7 @@ We are using in place sorting algorthim for that reason we will not use any extr
 **Space Complexity**: O(N)
 
 ### Description
-The problems solution comes from counting sort we have limited digit range like 0-9. First we sort all input array with counting sort. First pass will find smallest event number and number of its occurence. Second pass will print out starting from biggest and check even number count if it is bigger than 1 it will also printed. End of the two pass we have print out a number finally we need to print smallest even number one more time to make even given input.
+The problems solution comes from counting sort we have limited digit range like 0-9. First we sort all input array with counting sort. First pass will find smallest even number and number of its occurence. Second pass will print out starting from biggest and check even number count if it is bigger than 1 it will also printed. End of the two pass we have print out a number finally we need to print smallest even number one more time to make even given input.
 
 ### Explanation of Time Complexity
 ```c++
@@ -777,22 +777,29 @@ There is no need extra memory.
 
 
 ## 30.X Total Shapes
-**Problem Link**: [X Total Shapes](https://practice.geeksforgeeks.org/problems/x-total-shapes/0)
-**Source**      : Geeks for Geeks
-**Code**        : [C++](XTotalShapes.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [X Total Shapes](https://practice.geeksforgeeks.org/problems/x-total-shapes/0)      
+**Source**      : Geeks for Geeks       
+**Code**        : [C++](XTotalShapes.cpp)         
+**Time Complexity** : O(ROW*COLUMN)        
+**Space Complexity**: O(ROW*COLUMN)      
 
 ### Description
-
+For solving this problem I got help online. 
 
 ### Explanation of Time Complexity
 ```c++
-
+   for (int i = 0; i < row; i++) {
+        for (int j = 0; j < column; j++) {
+            if (inputs[i][j] == 'X' && !visited[i][j]) {
+                DFS(i, j, row, column);
+                number++;
+            }
+        }
+    }
 ```   
-
+We just visit each vertex and check if it is 'X' and unvisited vertex. If it is we increase number and call DFS.
 ### Explanation of Space Complexity
-
+It uses only  2(row * coloumn) because we are also tracing information about vertex to see it is visited or not.
 
 ## 31.Bipartite Graph
 **Problem Link**: [Bipartite Graph](https://practice.geeksforgeeks.org/problems/bipartite-graph/1)

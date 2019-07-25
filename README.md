@@ -936,8 +936,34 @@ This had been explained in class notes.
 ### Explanation of Space Complexity
 
 
+## 38. Magic Number
+**Problem Link**: [Magic Number](http://codeforces.com/problemset/problem/320/A)   
+**Source**      : Geeks for Geeks    
+**Code**        : [C++](MagicNumber.cpp)       
+**Time Complexity** : O(N)       
+**Space Complexity**: O(N)      
 
-## 38.Wilbur and Array
+### Description
+We are checking three condition to understand it is magic or not.
+
+### Explanation of Time Complexity
+```c++
+    for(int i = 0; i<input.size(); i++){
+        
+        if( input[i] == '1' ||
+           ( input[i] == '4' && i>0 && input[i-1] == '1')
+           || (input[i] == '4' && i > 1 && input[i - 1] == '4' && input[i - 2] == '1')){
+        } else{
+            isMagic = false;
+        }
+        
+    }
+```   
+The time complexity is number of character. It is linear
+### Explanation of Space Complexity
+We do not use any other extra space.
+
+## 39.Wilbur and Array
 **Problem Link**: [Wilbur and Array](http://codeforces.com/problemset/problem/596/B?locale=en)
 **Source**      : Code Forces
 **Code**        : [C++](WilburAndArray.cpp)    
@@ -956,7 +982,7 @@ This had been explained in class notes.
 
 
 
-## 39.Alternative Thinking
+## 40.Alternative Thinking
 **Problem Link**: [Alternative Thinking](http://codeforces.com/problemset/problem/603/A?locale=en)
 **Source**      : Code Forces
 **Code**        : [C++](AlternativeThinking.cpp)    
@@ -977,7 +1003,7 @@ This had been explained in class notes.
 
 
 
-## 40.Lexicographically Maximum Subsequence
+## 41.Lexicographically Maximum Subsequence
 **Problem Link**: [Lexicographically Maximum Subsequence](http://codeforces.com/problemset/problem/196/A?locale=en)      
 **Source**      : Code Forces    
 **Code**        : [C++](LexicographicallyMaximumSubsequence.cpp)      
@@ -1007,7 +1033,7 @@ There is no need any extra space.
 
 
 
-## 41.Woodcutters
+## 42.Woodcutters
 **Problem Link**: [Woodcutters](http://codeforces.com/contest/545/problem/C?locale=en)
 **Source**      : Code Forces
 **Code**        : [C++](Woodcutters.cpp)    
@@ -1026,7 +1052,7 @@ There is no need any extra space.
 
 
 
-## 42.Queue
+## 43.Queue
 **Problem Link**: [Queue](http://codeforces.com/problemset/problem/141/C?locale=en)
 **Source**      : Code Forces
 **Code**        : [C++](Queue.cpp)    
@@ -1045,7 +1071,7 @@ There is no need any extra space.
 
 
 
-## 43.Longest Common Subsequence
+## 44.Longest Common Subsequence
 **Problem Link**: [Longest Common Subsequence](https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0)   
 **Source**      : Geeks for Geeks   
 **Code**        : [C++](LongestCommonSubsequence.cpp)        
@@ -1064,7 +1090,7 @@ This had been explained in class notes.
 This had been explained in class notes.    
 
 
-## 44. 0 - 1 Knapsack Problem
+## 45. 0 - 1 Knapsack Problem
 **Problem Link**: [0 - 1  Knapsack Problem](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0)      
 **Source**      : Geeks for Geeks      
 **Code**        : [C++](KnapsackProblem.cpp)      
@@ -1080,7 +1106,7 @@ This had been explained in class notes.
 ### Explanation of Space Complexity
 This had been explained in class notes.    
 
-## 45.Longest Increasing Subsequence
+## 46.Longest Increasing Subsequence
 **Problem Link**: [Longest Increasing Subsequence](https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0)  
 **Source**      : Geeks for Geeks       
 **Code**        : [C++](LongestIncreasingSubsequence.cpp)           
@@ -1100,7 +1126,7 @@ This had been explained in class notes.
 
 
 
-## 46.Minimum Number of Jumps
+## 47.Minimum Number of Jumps
 **Problem Link**: [Minimum Number of Jumps](https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0)    
 **Source**      : Geeks for Geeks   
 **Code**        : [C++](MinimumNumberOfJumps.cpp)       
@@ -1119,7 +1145,7 @@ This had been explained in class notes.
 
 
 
-## 47.Edit Distance
+## 48.Edit Distance
 **Problem Link**: [Edit Distance](https://practice.geeksforgeeks.org/problems/edit-distance/0)
 **Source**      : Geeks for Geeks
 **Code**        : [C++](EditDistance.cpp)    
@@ -1139,7 +1165,7 @@ This had been explained in class notes.
 
 
 
-## 48.Longest Bitonic Subsequence
+## 49.Longest Bitonic Subsequence
 **Problem Link**: [Longest Bitonic Subsequence](https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0)    
 **Source**      : Geeks for Geeks    
 **Code**        : [C++](LongestBitonicSubsequence.cpp)       
@@ -1160,7 +1186,7 @@ This had been explained in class notes.
 
 
 
-## 49.Subset Sum Problem
+## 50.Subset Sum Problem
 **Problem Link**: [Subset Sum Problem](https://practice.geeksforgeeks.org/problems/subset-sum-problem/0)      
 **Source**      : Geeks for Geeks          
 **Code**        : [C++](SubsetSumProblem.cpp)            
@@ -1178,7 +1204,7 @@ This had been explained in class notes.
 
 
 
-## 50.Vertex Cover
+## 51.Vertex Cover
 **Problem Link**: [Vertex Cover](https://www.spoj.com/problems/PT07X/)
 **Source**      : Sphere Online Judge
 **Code**        : [C++](VertexCover.cpp)    
@@ -1199,7 +1225,7 @@ This had been explained in class notes.
 
 
 
-## 51.Longest Palindromic Subsequence
+## 52.Longest Palindromic Subsequence
 **Problem Link**: [Longest Palindromic Subsequence](https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0)
 **Source**      : Geeks for Geeks
 **Code**        : [C++](LongestPalindromicSubsequence.cpp)    
@@ -1219,7 +1245,7 @@ This had been explained in class notes.
 
 
 
-## 52.Longest Prefix Suffix
+## 53.Longest Prefix Suffix
 **Problem Link**: [Longest Prefix Suffix](https://practice.geeksforgeeks.org/problems/longest-prefix-suffix/0)
 **Source**      : Geeks for Geeks
 **Code**        : [C++](LongestPrefixSuffix)    
@@ -1237,7 +1263,7 @@ This had been explained in class notes.
 ### Explanation of Space Complexity
 
 
-## 53.Shift The String
+## 54.Shift The String
 **Problem Link**: [Shift The String](https://www.codechef.com/problems/TASHIFT)
 **Source**      : Code Chef
 **Code**        : [C++](ShiftTheString.cpp)    

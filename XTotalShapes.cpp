@@ -58,7 +58,7 @@ int main(){
 void DFS(int i, int j, int row, int column) {
     if (i < 0 || i > row-1) return;
     
-    if (j <0 || j > column-1) return;
+    if (j < 0 || j > column-1) return;
     
     if (inputs[i][j] == 'O' || visited[i][j]) {
         return;
@@ -76,16 +76,16 @@ void DFS(int i, int j, int row, int column) {
 
 int number(int row, int column) {
   
-    int count = 0;
+    int number = 0;
     
-    for (int i = 0; i < row; i++) {
-        for (int j = 0; j < column; j++) {
-            if (inputs[i][j] == 'X' && !visited[i][j]) {
-                DFS(i, j, row, column);
-                count++;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                if (inputs[i][j] == 'X' && !visited[i][j]) {
+                    DFS(i, j, row, column);
+                    number++;
+                }
             }
         }
-    }
     
-    return count;
+    return number;
 }

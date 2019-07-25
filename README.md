@@ -964,22 +964,29 @@ The time complexity is number of character. It is linear
 We do not use any other extra space.
 
 ## 39.Wilbur and Array
-**Problem Link**: [Wilbur and Array](http://codeforces.com/problemset/problem/596/B?locale=en)
-**Source**      : Code Forces
-**Code**        : [C++](WilburAndArray.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [Wilbur and Array](http://codeforces.com/problemset/problem/596/B?locale=en)  
+**Source**      : Code Forces   
+**Code**        : [C++](WilburAndArray.cpp)      
+**Time Complexity** : O(N)     
+**Space Complexity**: O(N)   
 
 ### Description
-
+The minimum number of operations equals the sum of the absolute values of differences between consecutive elements of b.
 
 ### Explanation of Time Complexity
 ```c++
+    for(int i = 1; i <= n; i++)
+    {
+        int number = 0;
+        cin>>number;
+        inputs[i] = number;
+        result += abs(inputs[i] - inputs[i-1]);
+    }
 
 ```   
-
+We are calculating absulute value of differences It takes linear time.
 ### Explanation of Space Complexity
-
+There is no need extra space.
 
 
 ## 40.Alternative Thinking

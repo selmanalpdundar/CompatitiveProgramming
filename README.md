@@ -983,24 +983,27 @@ We do not use any other extra space.
 
 
 ## 40.Alternative Thinking
-**Problem Link**: [Alternative Thinking](http://codeforces.com/problemset/problem/603/A?locale=en)
-**Source**      : Code Forces
-**Code**        : [C++](AlternativeThinking.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [Alternative Thinking](http://codeforces.com/problemset/problem/603/A?locale=en)    
+**Source**      : Code Forces    
+**Code**        : [C++](AlternativeThinking.cpp)       
+**Time Complexity** : O(N)    
+**Space Complexity**: O(N)    
 
 ### Description
-
+We are iterating in given binary string and counting longest 
 
 ### Explanation of Time Complexity
 ```c++
-
+    for(int i=0;i<numberOfItem;i++){
+        if(scores[i]!=scores[i+1])
+            count++;
+    }
+    
+    cout<< (count+2>numberOfItem ? numberOfItem: count+2 );
 ```   
-
+It is linear time we just need to iterate once on given binary string.
 ### Explanation of Space Complexity
-
-
-
+There is no need for extra space.
 
 
 ## 41.Lexicographically Maximum Subsequence

@@ -1,19 +1,27 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int main(){
-  std::ios_base::sync_with_stdio(false);
+    std::ios_base::sync_with_stdio(false);
+    
+    int numberOfItem = 0;
+    cin>>numberOfItem;
+    
+    string scores;
+    cin>>scores;
+    
 
-  int numberOfItem = 0;
-  cin>>numberOfItem;
-  int items[numberOfItem];
+    int count = 0;
+  
+    for(int i=0;i<numberOfItem;i++){
+        if(scores[i]!=scores[i+1])
+            count++;
+    }
+    
+    cout<< (count+2>numberOfItem ? numberOfItem: count+2 );
 
-  for(int j=0; j<numberOfItem; j++){
-    int temp = 0 ;
-    items[j] = temp;
-  }
-
-
-
-  return 0;
+    
+    return 0;
 }

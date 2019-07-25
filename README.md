@@ -780,8 +780,8 @@ There is no need extra memory.
 **Problem Link**: [X Total Shapes](https://practice.geeksforgeeks.org/problems/x-total-shapes/0)      
 **Source**      : Geeks for Geeks       
 **Code**        : [C++](XTotalShapes.cpp)         
-**Time Complexity** : O(ROW*COLUMN)        
-**Space Complexity**: O(ROW*COLUMN)      
+**Time Complexity** : O(ROW * COLUMN)        
+**Space Complexity**: O(ROW * COLUMN)      
 
 ### Description
 For solving this problem I got help from a few differen web site. 

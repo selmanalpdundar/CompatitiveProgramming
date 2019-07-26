@@ -919,22 +919,36 @@ This had been explained in class notes.
 
 
 ## 37.N Meetings in One Room
-**Problem Link**: [N Meetings in One Room](https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room/0)
-**Source**      : Geeks for Geeks
-**Code**        : [C++](NMeetingsInOneRoom.cpp)    
-**Time Complexity** :   
-**Space Complexity**:
+**Problem Link**: [N Meetings in One Room](https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room/0)    
+**Source**      : Geeks for Geeks    
+**Code**        : [C++](NMeetingsInOneRoom.cpp)         
+**Time Complexity** : O(nlogn)     
+**Space Complexity**: O(n)    
 
 ### Description
-
-
+We sort given meetings by finis time and compare If the next start time of meeting is grater than end time of previous.
 ### Explanation of Time Complexity
 ```c++
-
+        struct meeting temp= meeting[0];
+        
+        outputs[i].push_back(temp.id);
+        
+        int prev=temp.finish;
+        
+        for(int k=1;k<numberOfItem;k++)
+        {
+            temp=meeting[k];
+            if(temp.start>prev)
+            {
+                outputs[i].push_back(temp.id);
+                prev=temp.finish;
+            }
+        }
+        
 ```   
-
+Time complexity rely on sort algorithm otherwise we are just scanning given input array.
 ### Explanation of Space Complexity
-
+There is no need to extra space.
 
 ## 38. Magic Number
 **Problem Link**: [Magic Number](http://codeforces.com/problemset/problem/320/A)   

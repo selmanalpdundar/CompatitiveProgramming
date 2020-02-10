@@ -50,6 +50,7 @@ int getSum(int binaryIndexedTree[], int index){
 
 
 
+
 int main(){
     int input[] = {5,5,1,4,5,6,7};
     int binaryIndexedTree[8] = {0};
@@ -58,5 +59,7 @@ int main(){
 
     cout<< getSum(binaryIndexedTree,4)<<endl;
 
+   //  rangeSum(l, r) = getSum(r) – getSum(l-1)
+   
     return 0;
 }

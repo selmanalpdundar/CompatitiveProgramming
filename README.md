@@ -273,18 +273,51 @@ There is no need to use extra space for given input array I make everything in p
 **Problem Link**: [Finding Team Member](http://codeforces.com/problemset/problem/579/B?locale=en)   
 **Source**      : Code Forces    
 **Code**        : [C++](FindingTeamMember.cpp)     
-**Time Complexity** :     
-**Space Complexity**:   
+**Time Complexity** : O(n)      
+**Space Complexity**: O(n)      
 
 ### Description
+We need to store first pair of the i j with stregths of them to be able to loop best  combination. I have used a priority queue to be ables to  list all the pair incrementally. We just need to check pairs if they are seen before or not. If they are seen mark them as a seen one then go on. After iteration is done we will have answers for best pairs to create teams.
 
 
 ### Explanation of Time Complexity
 ```c++
-
+     // read stregths of each pair and save them on vector as a pair
+        for(int i = 2; i<=teamNumber; i++){
+            for(int j = 1; j<=i-1; j++){
+                cin >> strengths;
+                pairs.push( make_pair(strengths, make_pair(i, j)));
+            }
+        }
+      
+        // itarate on pairs that is saved.
+        while(!pairs.empty()){
+            // get first element of second pair
+            int first = pairs.top().second.first;
+            // get second element of second pair
+            int second = pairs.top().second.second;
+            // pop that pair
+            pairs.pop();
+            
+            // check if the element is seen before in loop
+            if(!seen[first] && !seen[second]){
+                
+                // assign team memebers are seen
+                seen[first] = true;
+                seen[second] = true;
+                
+                // asagin each of them as a team together because we used pioratiy queue it ordered incrementally
+                // so first pair  has higher score
+                answer[first] = second;
+                answer[second] = first;
+            }
+                   
+        }
 ```   
-
+The time complexty of the algorithm is O(n) becuase we are using piority queue to keep pair and it give us opportunity to itarate once on the queue to find 
+the higher score pairs.
 ### Explanation of Space Complexity
+There no need extra space for the hangling it is O (N).
 
 ## 9.Inversion Count
 **Problem Link**: [Inversion Count](https://www.spoj.com/problems/INVCNT/)   

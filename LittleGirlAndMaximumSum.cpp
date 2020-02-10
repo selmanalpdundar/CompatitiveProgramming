@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <utility>
+#include <algorithm>
 using namespace std;
 
 int main(){
@@ -8,10 +9,10 @@ int main(){
     cin>>size>>numberOfQuery;
 
     vector<int> inputs;
-    vector< pair<int,int> > queries;
+    vector<int> queries;
 
     inputs.reserve(size);
-    queries.reserve(numberOfQuery);
+    queries.reserve(numberOfQuery+1);
 
     for(int i = 0; i<size; i++){
         int temp = 0;
@@ -22,12 +23,29 @@ int main(){
     for(int j=0; j<numberOfQuery; j++){
         int left = 0, right = 0;
         cin>>left>>right;
-        pair<int,int> temp =make_pair(left,right);
-        queries[j] = temp;
+        queries[left]+=1;
+        
+        if(right<size){
+            queries[right+1] -=1;
+        }
+        
+    }
+
+    for (int i = 1; i <=size; i++) {
+            queries[i]+= queries[i-1];
     }
 
 
-    
+    std::sort(inputs.begin(),inputs.end());
+    std::sort(queries.begin(),queries.end());
+
+    long long su = 0;
+
+    for (int i = 0; i < size; i++) {
+         su+=inputs[i]*queries[i+1];
+    }
+
+    cout<<su;
 
 
 
